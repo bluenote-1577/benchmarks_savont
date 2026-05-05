@@ -65,8 +65,7 @@ conda env create -f environments/qiime2-amplicon-2024.10.yaml -n qiime2-amplicon
 conda activate savont_bench
 
 # Mock community benchmarks
-snakemake --configfile config_fl.yaml -j 20 --use-conda
-snakemake --configfile config_opr.yaml -j 20 --use-conda
+snakemake -j 20 --use-conda ##change config files manually in Snakefile (fl or opr)
 
 # Real data benchmark
 snakemake -s snakefile_real.snk -j 20 --use-conda
