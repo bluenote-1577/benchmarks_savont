@@ -1,0 +1,210 @@
+configfile: "config_real.yaml"
+
+import math
+
+# Wildcard constraints
+wildcard_constraints:
+    sample="[^/]+",
+    fraction="[0-9.]+",
+    method="(savont|unoise|unoise_min3)"
+
+# Get all samples and fractions
+ONT_SAMPLES = config["ont_samples"]
+FRACTIONS   = config["subsample_fractions"]
+
+# Final outputs — ASV fastas only (no reference mapping yet)
+rule all:
+    input:
+        expand("results_real/savont/{sample}_frac{fraction}/final_asvs.fasta",
+               sample=ONT_SAMPLES, fraction=FRACTIONS),
+        expand("results_real/unoise/{sample}_frac{fraction}/zotus.fa",
+               sample=ONT_SAMPLES, fraction=FRACTIONS),
+        expand("results_real/unoise_min3/{sample}_frac{fraction}/zotus.fa",
+               sample=ONT_SAMPLES, fraction=FRACTIONS),
+        expand("results_real/map_ont_pb/{method}/{sample}_frac{fraction}.map.tsv",
+               method=["savont", "unoise", "unoise_min3"],
+               sample=ONT_SAMPLES, fraction=FRACTIONS),
+        expand("results_real/otutabs/{method}/{sample}_frac{fraction}.tsv",
+               method=["unoise", "unoise_min3"],
+               sample=ONT_SAMPLES, fraction=FRACTIONS),
+
+# Step 1: Run porechop on raw reads
+rule real_porechop:
+    input:
+        lambda wildcards: f"{config['reads_dir']}/{wildcards.sample}.fastq.gz"
+    output:
+        temp("results_real/porechop/{sample}.fastq")
+    threads:
+        config["threads"]
+    log:
+        "logs_real/porechop/{sample}.log"
+    conda:
+        "savont_bench"
+    shell:
+        """
+        porechop -i {input} -o {output} -t {threads} 2>&1 | tee {log}
+        """
+
+# Step 2: Run cutadapt to trim primers
+rule real_cutadapt:
+    input:
+        "results_real/porechop/{sample}.fastq"
+    output:
+        "results_real/cutadapt/{sample}.fastq"
+    params:
+        primer=config["primers"][config["primer_type"]],
+        error_rate=config["cutadapt_error_rate"]
+    threads:
+        config["threads"]
+    log:
+        "logs_real/cutadapt/{sample}.log"
+    conda:
+        "cutadapt"
+    shell:
+        """
+        cutadapt -g '{params.primer}' \
+            --rc \
+            {input} \
+            -j {threads} \
+            --discard-untrimmed \
+            -e {params.error_rate} \
+            -o {output} \
+            2>&1 | tee {log}
+        """
+
+# Step 3: Subsample reads at different fractions
+rule real_subsample:
+    input:
+        "results_real/cutadapt/{sample}.fastq"
+    output:
+        "results_real/subsampled/{sample}_frac{fraction}.fastq"
+    params:
+        seed=42
+    log:
+        "logs_real/subsample/{sample}_frac{fraction}.log"
+    run:
+        fraction = float(wildcards.fraction)
+        if fraction == 1.0:
+            shell("cp {input} {output}")
+        else:
+            shell(f"seqtk sample -s {{params.seed}} {{input}} {fraction} > {{output}} 2> {{log}}")
+
+# Step 4a: Run UNOISE3 pipeline
+rule real_unoise_uniques:
+    input:
+        "results_real/subsampled/{sample}_frac{fraction}.fastq"
+    output:
+        "results_real/unoise/{sample}_frac{fraction}/uniques.fa"
+    params:
+        min_size=1
+    log:
+        "logs_real/unoise/{sample}_frac{fraction}_uniques.log"
+    shell:
+        """
+        usearch -fastx_uniques {input} \
+            -sizeout \
+            -relabel {wildcards.sample}_ \
+            -minuniquesize {params.min_size} \
+            -fastaout {output} \
+            2>&1 | tee {log} || true
+        """
+
+rule real_unoise_denoise:
+    input:
+        "results_real/unoise/{sample}_frac{fraction}/uniques.fa"
+    output:
+        "results_real/unoise/{sample}_frac{fraction}/zotus.fa"
+    log:
+        "logs_real/unoise/{sample}_frac{fraction}_denoise.log"
+    conda:
+        "savont_bench"
+    shell:
+        """
+        touch {output}
+        usearch -unoise3 {input} \
+            -zotus {output} \
+            2>&1 | tee {log} || true
+        """
+
+rule real_unoise_denoise_min3:
+    input:
+        "results_real/unoise/{sample}_frac{fraction}/uniques.fa"
+    output:
+        "results_real/unoise_min3/{sample}_frac{fraction}/zotus.fa"
+    log:
+        "logs_real/unoise_min3/{sample}_frac{fraction}_denoise.log"
+    conda:
+        "savont_bench"
+    shell:
+        """
+        touch {output}
+        usearch -unoise3 {input} \
+            -zotus {output} \
+            -minsize 3 \
+            2>&1 | tee {log} || true
+        """
+
+# Step 4b: Run savont
+rule real_savont:
+    input:
+        "results_real/subsampled/{sample}_frac{fraction}.fastq"
+    output:
+        "results_real/savont/{sample}_frac{fraction}/final_asvs.fasta"
+    params:
+        outdir="results_real/savont/{sample}_frac{fraction}"
+    threads:
+        config["threads"]
+    log:
+        "logs_real/savont/{sample}_frac{fraction}.log"
+    conda:
+        "savont_bench"
+    shell:
+        """
+        savont asv -t {threads} {input} -o {params.outdir} 2>&1 | tee {log}
+        """
+
+rule map_ont_pb:
+    input:
+        query=lambda wc: {
+            'savont':      f"results_real/savont/{wc.sample}_frac{wc.fraction}/final_asvs.fasta",
+            'unoise':      f"results_real/unoise/{wc.sample}_frac{wc.fraction}/zotus.fa",
+            'unoise_min3': f"results_real/unoise_min3/{wc.sample}_frac{wc.fraction}/zotus.fa",
+        }[wc.method],
+        ref=lambda wc: f"results_real/pb_cat_refs/{wc.sample.replace('1_ont', '')}_pb_zotus.fa"
+    output:
+        "results_real/map_ont_pb/{method}/{sample}_frac{fraction}.map.tsv"
+    threads:
+        5
+    log:
+        "logs_real/map_ont_pb/{method}/{sample}_frac{fraction}.log"
+    shell:
+        """
+        minimap2 -t {threads} --cs --secondary=no {input.ref} {input.query} > {output} 2> {log}
+        """
+
+rule real_otutab:
+    input:
+        reads= "results_real/unoise/{sample}_frac{fraction}/uniques.fa",
+        zotus=  lambda wc: (
+            f"results_real/unoise/{wc.sample}_frac{wc.fraction}/zotus.fa"
+            if wc.method == "unoise" else
+            f"results_real/unoise_min3/{wc.sample}_frac{wc.fraction}/zotus.fa"
+        )
+    output:
+        "results_real/otutabs/{method}/{sample}_frac{fraction}.tsv"
+    threads:
+        config["threads"]
+    log:
+        "logs_real/otutabs/{method}/{sample}_frac{fraction}.log"
+    wildcard_constraints:
+        method="(unoise|unoise_min3)"
+    shell:
+        """
+        touch {output}
+        usearch -otutab {input.reads} \
+            -zotus {input.zotus} \
+            -otutabout {output} \
+            -sample_delim _ \
+            -threads {threads} \
+            2>&1 | tee {log} || true
+        """

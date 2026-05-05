@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="553.973942pt" height="352.220872pt" viewBox="0 0 553.973942 352.220872" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-04-23T00:09:11.293959</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 352.220872 
+L 553.973942 352.220872 
+L 553.973942 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 57.435 312.253433 
+L 403.3426 312.253433 
+L 403.3426 27.077969 
+L 57.435 27.077969 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.158073 312.253433 
+L 184.74117 312.253433 
+L 184.74117 243.34002 
+L 73.158073 243.34002 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #1f77b4; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 276.03643 312.253433 
+L 387.619527 312.253433 
+L 387.619527 238.118595 
+L 276.03643 238.118595 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #1f77b4; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 73.158073 243.34002 
+L 184.74117 243.34002 
+L 184.74117 185.715596 
+L 73.158073 185.715596 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #aec7e8; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 276.03643 238.118595 
+L 387.619527 238.118595 
+L 387.619527 180.623973 
+L 276.03643 180.623973 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #aec7e8; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 73.158073 185.715596 
+L 184.74117 185.715596 
+L 184.74117 132.020323 
+L 73.158073 132.020323 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ff7f0e; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 276.03643 180.623973 
+L 387.619527 180.623973 
+L 387.619527 127.099352 
+L 276.03643 127.099352 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ff7f0e; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 73.158073 132.020323 
+L 184.74117 132.020323 
+L 184.74117 104.028375 
+L 73.158073 104.028375 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ffbb78; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 276.03643 127.099352 
+L 387.619527 127.099352 
+L 387.619527 97.794552 
+L 276.03643 97.794552 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ffbb78; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 73.158073 104.028375 
+L 184.74117 104.028375 
+L 184.74117 78.238129 
+L 73.158073 78.238129 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #2ca02c; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 276.03643 97.794552 
+L 387.619527 97.794552 
+L 387.619527 73.479 
+L 276.03643 73.479 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #2ca02c; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 73.158073 78.238129 
+L 184.74117 78.238129 
+L 184.74117 63.025656 
+L 73.158073 63.025656 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #98df8a; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 276.03643 73.479 
+L 387.619527 73.479 
+L 387.619527 58.207168 
+L 276.03643 58.207168 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #98df8a; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 73.158073 63.025656 
+L 184.74117 63.025656 
+L 184.74117 55.504281 
+L 73.158073 55.504281 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #d62728; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 276.03643 58.207168 
+L 387.619527 58.207168 
+L 387.619527 50.66135 
+L 276.03643 50.66135 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #d62728; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 73.158073 55.504281 
+L 184.74117 55.504281 
+L 184.74117 48.732355 
+L 73.158073 48.732355 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ff9896; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 276.03643 50.66135 
+L 387.619527 50.66135 
+L 387.619527 43.948952 
+L 276.03643 43.948952 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #ff9896; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 73.158073 48.732355 
+L 184.74117 48.732355 
+L 184.74117 42.815179 
+L 73.158073 42.815179 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #9467bd; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 276.03643 43.948952 
+L 387.619527 43.948952 
+L 387.619527 38.075603 
+L 276.03643 38.075603 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #9467bd; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 73.158073 42.815179 
+L 184.74117 42.815179 
+L 184.74117 39.578815 
+L 73.158073 39.578815 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c5b0d5; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 276.03643 38.075603 
+L 387.619527 38.075603 
+L 387.619527 34.770085 
+L 276.03643 34.770085 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c5b0d5; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 73.158073 39.578815 
+L 184.74117 39.578815 
+L 184.74117 37.546767 
+L 73.158073 37.546767 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #8c564b; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 276.03643 34.770085 
+L 387.619527 34.770085 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #8c564b; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 73.158073 37.546767 
+L 184.74117 37.546767 
+L 184.74117 33.833701 
+L 73.158073 33.833701 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c49c94; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c49c94; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 73.158073 33.833701 
+L 184.74117 33.833701 
+L 184.74117 33.148789 
+L 73.158073 33.148789 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #e377c2; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #e377c2; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 73.158073 33.148789 
+L 184.74117 33.148789 
+L 184.74117 32.928809 
+L 73.158073 32.928809 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #f7b6d2; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #f7b6d2; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 73.158073 32.928809 
+L 184.74117 32.928809 
+L 184.74117 32.840234 
+L 73.158073 32.840234 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #7f7f7f; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #7f7f7f; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 73.158073 32.840234 
+L 184.74117 32.840234 
+L 184.74117 32.774048 
+L 73.158073 32.774048 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c7c7c7; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #c7c7c7; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 73.158073 32.774048 
+L 184.74117 32.774048 
+L 184.74117 32.716285 
+L 73.158073 32.716285 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #bcbd22; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #bcbd22; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 73.158073 32.716285 
+L 184.74117 32.716285 
+L 184.74117 32.669645 
+L 73.158073 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #dbdb8d; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 276.03643 32.669645 
+L 387.619527 32.669645 
+L 387.619527 32.669645 
+L 276.03643 32.669645 
+z
+" clip-path="url(#p6c5961c44e)" style="fill: #dbdb8d; stroke: #ffffff; stroke-width: 0.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="me5e1f2288a" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me5e1f2288a" x="128.949621" y="312.253433" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(108.62718 336.966685) rotate(-30)">EMU</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#me5e1f2288a" x="331.827979" y="312.253433" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(300.674808 343.21981) rotate(-30)">Savont</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="m6eac7aa47d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="312.253433" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="316.052651" transform="rotate(-0 50.435 316.052651)">0%</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="284.295054" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="288.094273" transform="rotate(-0 50.435 288.094273)">10%</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="256.336675" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="260.135894" transform="rotate(-0 50.435 260.135894)">20%</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="228.378296" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="232.177515" transform="rotate(-0 50.435 232.177515)">30%</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="200.419917" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="204.219136" transform="rotate(-0 50.435 204.219136)">40%</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="172.461539" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="176.260757" transform="rotate(-0 50.435 176.260757)">50%</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="144.50316" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="148.302379" transform="rotate(-0 50.435 148.302379)">60%</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="116.544781" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="120.344" transform="rotate(-0 50.435 120.344)">70%</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="88.586402" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="92.385621" transform="rotate(-0 50.435 92.385621)">80%</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="60.628023" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="64.427242" transform="rotate(-0 50.435 64.427242)">90%</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m6eac7aa47d" x="57.435" y="32.669645" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="50.435" y="36.468863" transform="rotate(-0 50.435 36.468863)">100%</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font: 11px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="15.558281" y="169.665701" transform="rotate(-90 15.558281 169.665701)">Relative abundance</text>
+    </g>
+   </g>
+   <g id="patch_39">
+    <path d="M 57.435 312.253433 
+L 57.435 27.077969 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 57.435 312.253433 
+L 403.3426 312.253433 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <g id="patch_41">
+     <path d="M 406.801676 104.356436 
+L 546.773942 104.356436 
+Q 549.023942 104.356436 549.023942 102.106436 
+L 549.023942 35.633233 
+Q 549.023942 33.383233 546.773942 33.383233 
+L 406.801676 33.383233 
+Q 404.551676 33.383233 404.551676 35.633233 
+L 404.551676 102.106436 
+Q 404.551676 104.356436 406.801676 104.356436 
+z
+" style="fill: #ffffff; opacity: 0.85; stroke: #2c7bb6; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 41.371905)">Only in emu (7):</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 49.818076)">  • Veillonella rogosae</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 58.315811)">  • Veillonella dispar</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 66.761983)">  • Laceyella sacchari</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 75.208155)">  • Bifidobacterium ruminantium</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 83.654326)">  • Roseburia intestinalis</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 92.100498)">  • Salmonella enterica</text>
+    <text style="fill: #2c7bb6; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 100.54667)">  • Veillonella rodentium</text>
+   </g>
+   <g id="text_16">
+    <g id="patch_42">
+     <path d="M 406.801676 167.698028 
+L 492.591129 167.698028 
+Q 494.841129 167.698028 494.841129 165.448028 
+L 494.841129 149.703418 
+Q 494.841129 147.453418 492.591129 147.453418 
+L 406.801676 147.453418 
+Q 404.551676 147.453418 404.551676 149.703418 
+L 404.551676 165.448028 
+Q 404.551676 167.698028 406.801676 167.698028 
+z
+" style="fill: #ffffff; opacity: 0.85; stroke: #d7191c; stroke-width: 0.8; stroke-linejoin: miter"/>
+    </g>
+    <text style="fill: #d7191c; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 155.44209)">Only in savont (0):</text>
+    <text style="fill: #d7191c; font: 7.5px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace" transform="translate(406.801676 163.888262)">  (none)</text>
+   </g>
+   <g id="text_17">
+    <text style="font: 13px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="230.3888" y="17.077969" transform="rotate(-0 230.3888 17.077969)">Species Relative Abundance</text>
+   </g>
+   <g id="legend_1">
+    <g id="text_18">
+     <text style="font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="469.287223" y="41.116562" transform="rotate(-0 469.287223 41.116562)">Species</text>
+    </g>
+    <g id="patch_43">
+     <path d="M 414.001676 53.067031 
+L 430.001676 53.067031 
+L 430.001676 47.467031 
+L 414.001676 47.467031 
+z
+" style="fill: #dbdb8d; stroke: #dbdb8d; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="53.067031" transform="rotate(-0 436.401676 53.067031)">Veillonella rodentium</text>
+    </g>
+    <g id="patch_44">
+     <path d="M 414.001676 64.809531 
+L 430.001676 64.809531 
+L 430.001676 59.209531 
+L 414.001676 59.209531 
+z
+" style="fill: #bcbd22; stroke: #bcbd22; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="64.809531" transform="rotate(-0 436.401676 64.809531)">Salmonella enterica</text>
+    </g>
+    <g id="patch_45">
+     <path d="M 414.001676 76.552031 
+L 430.001676 76.552031 
+L 430.001676 70.952031 
+L 414.001676 70.952031 
+z
+" style="fill: #c7c7c7; stroke: #c7c7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="76.552031" transform="rotate(-0 436.401676 76.552031)">Roseburia intestinalis</text>
+    </g>
+    <g id="patch_46">
+     <path d="M 414.001676 88.294531 
+L 430.001676 88.294531 
+L 430.001676 82.694531 
+L 414.001676 82.694531 
+z
+" style="fill: #7f7f7f; stroke: #7f7f7f; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="88.294531" transform="rotate(-0 436.401676 88.294531)">Bifidobacterium ruminantium</text>
+    </g>
+    <g id="patch_47">
+     <path d="M 414.001676 100.037031 
+L 430.001676 100.037031 
+L 430.001676 94.437031 
+L 414.001676 94.437031 
+z
+" style="fill: #f7b6d2; stroke: #f7b6d2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="100.037031" transform="rotate(-0 436.401676 100.037031)">Laceyella sacchari</text>
+    </g>
+    <g id="patch_48">
+     <path d="M 414.001676 111.779531 
+L 430.001676 111.779531 
+L 430.001676 106.179531 
+L 414.001676 106.179531 
+z
+" style="fill: #e377c2; stroke: #e377c2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="111.779531" transform="rotate(-0 436.401676 111.779531)">Veillonella dispar</text>
+    </g>
+    <g id="patch_49">
+     <path d="M 414.001676 123.522031 
+L 430.001676 123.522031 
+L 430.001676 117.922031 
+L 414.001676 117.922031 
+z
+" style="fill: #c49c94; stroke: #c49c94; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="123.522031" transform="rotate(-0 436.401676 123.522031)">Veillonella rogosae</text>
+    </g>
+    <g id="patch_50">
+     <path d="M 414.001676 135.264531 
+L 430.001676 135.264531 
+L 430.001676 129.664531 
+L 414.001676 129.664531 
+z
+" style="fill: #8c564b; stroke: #8c564b; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="135.264531" transform="rotate(-0 436.401676 135.264531)">Akkermansia muciniphila</text>
+    </g>
+    <g id="patch_51">
+     <path d="M 414.001676 147.007031 
+L 430.001676 147.007031 
+L 430.001676 141.407031 
+L 414.001676 141.407031 
+z
+" style="fill: #c5b0d5; stroke: #c5b0d5; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="147.007031" transform="rotate(-0 436.401676 147.007031)">Limosilactobacillus fermentum</text>
+    </g>
+    <g id="patch_52">
+     <path d="M 414.001676 158.749531 
+L 430.001676 158.749531 
+L 430.001676 153.149531 
+L 414.001676 153.149531 
+z
+" style="fill: #9467bd; stroke: #9467bd; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="158.749531" transform="rotate(-0 436.401676 158.749531)">Fusobacterium nucleatum</text>
+    </g>
+    <g id="patch_53">
+     <path d="M 414.001676 170.492031 
+L 430.001676 170.492031 
+L 430.001676 164.892031 
+L 414.001676 164.892031 
+z
+" style="fill: #ff9896; stroke: #ff9896; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="170.492031" transform="rotate(-0 436.401676 170.492031)">Bifidobacterium adolescentis</text>
+    </g>
+    <g id="patch_54">
+     <path d="M 414.001676 182.234531 
+L 430.001676 182.234531 
+L 430.001676 176.634531 
+L 414.001676 176.634531 
+z
+" style="fill: #d62728; stroke: #d62728; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="182.234531" transform="rotate(-0 436.401676 182.234531)">Roseburia hominis</text>
+    </g>
+    <g id="patch_55">
+     <path d="M 414.001676 193.977031 
+L 430.001676 193.977031 
+L 430.001676 188.377031 
+L 414.001676 188.377031 
+z
+" style="fill: #98df8a; stroke: #98df8a; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="193.977031" transform="rotate(-0 436.401676 193.977031)">Clostridioides difficile</text>
+    </g>
+    <g id="patch_56">
+     <path d="M 414.001676 205.719531 
+L 430.001676 205.719531 
+L 430.001676 200.119531 
+L 414.001676 200.119531 
+z
+" style="fill: #2ca02c; stroke: #2ca02c; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="205.719531" transform="rotate(-0 436.401676 205.719531)">Prevotella corporis</text>
+    </g>
+    <g id="patch_57">
+     <path d="M 414.001676 217.462031 
+L 430.001676 217.462031 
+L 430.001676 211.862031 
+L 414.001676 211.862031 
+z
+" style="fill: #ffbb78; stroke: #ffbb78; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="217.462031" transform="rotate(-0 436.401676 217.462031)">Escherichia coli</text>
+    </g>
+    <g id="patch_58">
+     <path d="M 414.001676 229.204531 
+L 430.001676 229.204531 
+L 430.001676 223.604531 
+L 414.001676 223.604531 
+z
+" style="fill: #ff7f0e; stroke: #ff7f0e; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="229.204531" transform="rotate(-0 436.401676 229.204531)">Faecalibacterium prausnitzii</text>
+    </g>
+    <g id="patch_59">
+     <path d="M 414.001676 240.947031 
+L 430.001676 240.947031 
+L 430.001676 235.347031 
+L 414.001676 235.347031 
+z
+" style="fill: #aec7e8; stroke: #aec7e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="240.947031" transform="rotate(-0 436.401676 240.947031)">Bacteroides fragilis</text>
+    </g>
+    <g id="patch_60">
+     <path d="M 414.001676 252.689531 
+L 430.001676 252.689531 
+L 430.001676 247.089531 
+L 414.001676 247.089531 
+z
+" style="fill: #1f77b4; stroke: #1f77b4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="252.689531" transform="rotate(-0 436.401676 252.689531)">Veillonella parvula</text>
+    </g>
+   </g>
+   <g id="legend_2">
+    <g id="text_37">
+     <text style="font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="469.287223" y="41.116562" transform="rotate(-0 469.287223 41.116562)">Species</text>
+    </g>
+    <g id="patch_61">
+     <path d="M 414.001676 53.067031 
+L 430.001676 53.067031 
+L 430.001676 47.467031 
+L 414.001676 47.467031 
+z
+" style="fill: #dbdb8d; stroke: #dbdb8d; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="53.067031" transform="rotate(-0 436.401676 53.067031)">Veillonella rodentium</text>
+    </g>
+    <g id="patch_62">
+     <path d="M 414.001676 64.809531 
+L 430.001676 64.809531 
+L 430.001676 59.209531 
+L 414.001676 59.209531 
+z
+" style="fill: #bcbd22; stroke: #bcbd22; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="64.809531" transform="rotate(-0 436.401676 64.809531)">Salmonella enterica</text>
+    </g>
+    <g id="patch_63">
+     <path d="M 414.001676 76.552031 
+L 430.001676 76.552031 
+L 430.001676 70.952031 
+L 414.001676 70.952031 
+z
+" style="fill: #c7c7c7; stroke: #c7c7c7; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="76.552031" transform="rotate(-0 436.401676 76.552031)">Roseburia intestinalis</text>
+    </g>
+    <g id="patch_64">
+     <path d="M 414.001676 88.294531 
+L 430.001676 88.294531 
+L 430.001676 82.694531 
+L 414.001676 82.694531 
+z
+" style="fill: #7f7f7f; stroke: #7f7f7f; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_41">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="88.294531" transform="rotate(-0 436.401676 88.294531)">Bifidobacterium ruminantium</text>
+    </g>
+    <g id="patch_65">
+     <path d="M 414.001676 100.037031 
+L 430.001676 100.037031 
+L 430.001676 94.437031 
+L 414.001676 94.437031 
+z
+" style="fill: #f7b6d2; stroke: #f7b6d2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_42">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="100.037031" transform="rotate(-0 436.401676 100.037031)">Laceyella sacchari</text>
+    </g>
+    <g id="patch_66">
+     <path d="M 414.001676 111.779531 
+L 430.001676 111.779531 
+L 430.001676 106.179531 
+L 414.001676 106.179531 
+z
+" style="fill: #e377c2; stroke: #e377c2; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_43">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="111.779531" transform="rotate(-0 436.401676 111.779531)">Veillonella dispar</text>
+    </g>
+    <g id="patch_67">
+     <path d="M 414.001676 123.522031 
+L 430.001676 123.522031 
+L 430.001676 117.922031 
+L 414.001676 117.922031 
+z
+" style="fill: #c49c94; stroke: #c49c94; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_44">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="123.522031" transform="rotate(-0 436.401676 123.522031)">Veillonella rogosae</text>
+    </g>
+    <g id="patch_68">
+     <path d="M 414.001676 135.264531 
+L 430.001676 135.264531 
+L 430.001676 129.664531 
+L 414.001676 129.664531 
+z
+" style="fill: #8c564b; stroke: #8c564b; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_45">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="135.264531" transform="rotate(-0 436.401676 135.264531)">Akkermansia muciniphila</text>
+    </g>
+    <g id="patch_69">
+     <path d="M 414.001676 147.007031 
+L 430.001676 147.007031 
+L 430.001676 141.407031 
+L 414.001676 141.407031 
+z
+" style="fill: #c5b0d5; stroke: #c5b0d5; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_46">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="147.007031" transform="rotate(-0 436.401676 147.007031)">Limosilactobacillus fermentum</text>
+    </g>
+    <g id="patch_70">
+     <path d="M 414.001676 158.749531 
+L 430.001676 158.749531 
+L 430.001676 153.149531 
+L 414.001676 153.149531 
+z
+" style="fill: #9467bd; stroke: #9467bd; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_47">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="158.749531" transform="rotate(-0 436.401676 158.749531)">Fusobacterium nucleatum</text>
+    </g>
+    <g id="patch_71">
+     <path d="M 414.001676 170.492031 
+L 430.001676 170.492031 
+L 430.001676 164.892031 
+L 414.001676 164.892031 
+z
+" style="fill: #ff9896; stroke: #ff9896; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_48">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="170.492031" transform="rotate(-0 436.401676 170.492031)">Bifidobacterium adolescentis</text>
+    </g>
+    <g id="patch_72">
+     <path d="M 414.001676 182.234531 
+L 430.001676 182.234531 
+L 430.001676 176.634531 
+L 414.001676 176.634531 
+z
+" style="fill: #d62728; stroke: #d62728; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_49">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="182.234531" transform="rotate(-0 436.401676 182.234531)">Roseburia hominis</text>
+    </g>
+    <g id="patch_73">
+     <path d="M 414.001676 193.977031 
+L 430.001676 193.977031 
+L 430.001676 188.377031 
+L 414.001676 188.377031 
+z
+" style="fill: #98df8a; stroke: #98df8a; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_50">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="193.977031" transform="rotate(-0 436.401676 193.977031)">Clostridioides difficile</text>
+    </g>
+    <g id="patch_74">
+     <path d="M 414.001676 205.719531 
+L 430.001676 205.719531 
+L 430.001676 200.119531 
+L 414.001676 200.119531 
+z
+" style="fill: #2ca02c; stroke: #2ca02c; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_51">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="205.719531" transform="rotate(-0 436.401676 205.719531)">Prevotella corporis</text>
+    </g>
+    <g id="patch_75">
+     <path d="M 414.001676 217.462031 
+L 430.001676 217.462031 
+L 430.001676 211.862031 
+L 414.001676 211.862031 
+z
+" style="fill: #ffbb78; stroke: #ffbb78; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_52">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="217.462031" transform="rotate(-0 436.401676 217.462031)">Escherichia coli</text>
+    </g>
+    <g id="patch_76">
+     <path d="M 414.001676 229.204531 
+L 430.001676 229.204531 
+L 430.001676 223.604531 
+L 414.001676 223.604531 
+z
+" style="fill: #ff7f0e; stroke: #ff7f0e; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_53">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="229.204531" transform="rotate(-0 436.401676 229.204531)">Faecalibacterium prausnitzii</text>
+    </g>
+    <g id="patch_77">
+     <path d="M 414.001676 240.947031 
+L 430.001676 240.947031 
+L 430.001676 235.347031 
+L 414.001676 235.347031 
+z
+" style="fill: #aec7e8; stroke: #aec7e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_54">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="240.947031" transform="rotate(-0 436.401676 240.947031)">Bacteroides fragilis</text>
+    </g>
+    <g id="patch_78">
+     <path d="M 414.001676 252.689531 
+L 430.001676 252.689531 
+L 430.001676 247.089531 
+L 414.001676 247.089531 
+z
+" style="fill: #1f77b4; stroke: #1f77b4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_55">
+     <text style="font: 8px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="436.401676" y="252.689531" transform="rotate(-0 436.401676 252.689531)">Veillonella parvula</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6c5961c44e">
+   <rect x="57.435" y="27.077969" width="345.9076" height="285.175464"/>
+  </clipPath>
+ </defs>
+</svg>

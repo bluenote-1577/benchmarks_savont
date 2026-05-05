@@ -1,0 +1,216 @@
+(2026-04-22 23:40:34.992) INFO [savont] COMMAND: savont classify -i ../../results/savont/v1v8_zmock1_frac9486.832980505142/ -o 10k_zmock1_savont --db /homes9/jshaw/dbs/emu-1/ --species-threshold 98
+(2026-04-22 23:40:34.993) INFO [savont] VERSION: 0.4.0
+(2026-04-22 23:40:34.994) INFO [savont] Starting classification...
+(2026-04-22 23:40:35.015) INFO [savont::databases] Detected database type 'emu-1' for /homes9/jshaw/dbs/emu-1/
+(2026-04-22 23:40:35.039) INFO [savont::taxonomy] Loading taxonomy from /homes9/jshaw/dbs/emu-1/taxonomy.tsv
+(2026-04-22 23:40:35.090) INFO [savont::taxonomy] Loaded 17556 taxonomy entries
+(2026-04-22 23:40:35.090) INFO [savont::classify] Loading consensus sequences from ../../results/savont/v1v8_zmock1_frac9486.832980505142/final_asvs.fasta
+(2026-04-22 23:40:35.120) INFO [savont::classify] Loaded 25 consensus sequences
+(2026-04-22 23:40:35.145) INFO [savont::classify] Building minimap2 index from database FASTA: /homes9/jshaw/dbs/emu-1/species_taxid.fasta
+(2026-04-22 23:40:35.145) INFO [savont::classify] Loading pre-built minimap2 index: /homes9/jshaw/dbs/emu-1/species_taxid.fasta.mmi
+(2026-04-22 23:40:35.290) INFO [savont::classify] Aligning 25 consensus sequences to database
+(2026-04-22 23:40:36.221) INFO [savont::classify] Collected 81 total mappings from 25 ASVs
+(2026-04-22 23:40:36.221) INFO [savont::classify] Found 13 unique taxonomic IDs
+(2026-04-22 23:40:36.221) INFO [savont::classify] Running EM algorithm to distribute abundances
+(2026-04-22 23:40:36.221) INFO [savont::classify] Starting EM algorithm with 13 taxa and 81 mappings
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] EM iteration 1: max abundance change = 1.141663e-1
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 1.141663e-1
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 6, Species Listeria monocytogenes : change = 9.693740e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 0, Species Limosilactobacillus fermentum : change = 8.279159e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 12, Species Shigella sonnei : change = 7.510951e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 10, Species Shigella dysenteriae : change = 7.438409e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] EM iteration 2: max abundance change = 2.115200e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 2.115200e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 5, Species Staphylococcus argenteus : change = 2.115200e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 2.009393e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 2.009393e-2
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 9, Species Escherichia coli : change = 4.150815e-3
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] EM iteration 3: max abundance change = 6.815406e-3
+(2026-04-22 23:40:36.221) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 6.815406e-3
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 6.815406e-3
+(2026-04-22 23:40:36.221) DEBUG [savont::classify]   Taxon 5, Species Staphylococcus argenteus : change = 3.278186e-3
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 3.278186e-3
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 6.564943e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 4: max abundance change = 2.311631e-3
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 2.311631e-3
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 2.311631e-3
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 4.620109e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 5, Species Staphylococcus argenteus : change = 4.620109e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 1, Species Pseudomonas aeruginosa : change = 1.737028e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 5: max abundance change = 7.840530e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 7.840530e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 7.840530e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 5, Species Staphylococcus argenteus : change = 6.421147e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 6.421147e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 4.406119e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 6: max abundance change = 2.659330e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 2.659330e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 2.659330e-4
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 1.105563e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 1, Species Pseudomonas aeruginosa : change = 1.105563e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 8.906886e-6
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 7: max abundance change = 9.019845e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 9.019845e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 9.019845e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 1, Species Pseudomonas aeruginosa : change = 2.766437e-6
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 2.766437e-6
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 1.235155e-6
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 8: max abundance change = 3.059327e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 3.059327e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 3.059327e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 6.917675e-7
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 1, Species Pseudomonas aeruginosa : change = 6.917675e-7
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 4, Species Staphylococcus aureus : change = 1.712777e-7
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] EM iteration 9: max abundance change = 1.037654e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Top 5 abundance changes:
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 7, Species Bacillus subtilis : change = 1.037654e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 8, Species Bacillus halotolerans : change = 1.037654e-5
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 1, Species Pseudomonas aeruginosa : change = 1.729518e-7
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 2, Species Pseudomonas sp. AK6U : change = 1.729518e-7
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Taxon 5, Species Staphylococcus argenteus : change = 2.375079e-8
+(2026-04-22 23:40:36.232) INFO [savont::classify] EM converged after 9 iterations (max change: 1.037654e-5)
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] ASV ASV_0 (1239 depth, 6 total hits):
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #1: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #2: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #3: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #4: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #5: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #6: tax_id=985002, species=Staphylococcus argenteus, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] Classified ASV ASV_0: tax_id_acc=1280, tax_id_tax=1280, species=Staphylococcus aureus, genus =Staphylococcus, abundance=0.149801
+(2026-04-22 23:40:36.232) DEBUG [savont::classify] ASV ASV_1 (985 depth, 4 total hits):
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #1: tax_id=1351, species=Enterococcus faecalis, identity=100.00%, nm=0, EM_abundance=0.119091
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #2: tax_id=1351, species=Enterococcus faecalis, identity=100.00%, nm=0, EM_abundance=0.119091
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #3: tax_id=1351, species=Enterococcus faecalis, identity=100.00%, nm=0, EM_abundance=0.119091
+(2026-04-22 23:40:36.232) DEBUG [savont::classify]   Hit #4: tax_id=1351, species=Enterococcus faecalis, identity=100.00%, nm=0, EM_abundance=0.119091
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_1: tax_id_acc=1351, tax_id_tax=1351, species=Enterococcus faecalis, genus =Enterococcus, abundance=0.119091
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_2 (662 depth, 5 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #4: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #5: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_2: tax_id_acc=1639, tax_id_tax=1639, species=Listeria monocytogenes, genus =Listeria, abundance=0.080039
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_3 (548 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1613, species=Limosilactobacillus fermentum, identity=100.00%, nm=0, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1613, species=Limosilactobacillus fermentum, identity=100.00%, nm=0, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_3: tax_id_acc=1613, tax_id_tax=1613, species=Limosilactobacillus fermentum, genus =Limosilactobacillus, abundance=0.066256
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_4 (503 depth, 4 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=260554, species=Bacillus halotolerans, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #4: tax_id=260554, species=Bacillus halotolerans, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_4: tax_id_acc=1423, tax_id_tax=1423, species=Bacillus subtilis, genus =Bacillus, abundance=0.060815
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_5 (499 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_5: tax_id_acc=1639, tax_id_tax=1639, species=Listeria monocytogenes, genus =Listeria, abundance=0.060331
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_6 (495 depth, 4 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=28901, species=Salmonella enterica, identity=100.00%, nm=0, EM_abundance=0.070245
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=28901, species=Salmonella enterica, identity=100.00%, nm=0, EM_abundance=0.070245
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=28901, species=Salmonella enterica, identity=100.00%, nm=0, EM_abundance=0.070245
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #4: tax_id=28901, species=Salmonella enterica, identity=100.00%, nm=0, EM_abundance=0.070245
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_6: tax_id_acc=28901, tax_id_tax=28901, species=Salmonella enterica, genus =Salmonella, abundance=0.059848
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_7 (348 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_7: tax_id_acc=1423, tax_id_tax=1423, species=Bacillus subtilis, genus =Bacillus, abundance=0.042075
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_8 (322 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_8: tax_id_acc=1423, tax_id_tax=1423, species=Bacillus subtilis, genus =Bacillus, abundance=0.038931
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_9 (319 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1613, species=Limosilactobacillus fermentum, identity=100.00%, nm=0, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1613, species=Limosilactobacillus fermentum, identity=100.00%, nm=0, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_9: tax_id_acc=1613, tax_id_tax=1613, species=Limosilactobacillus fermentum, genus =Limosilactobacillus, abundance=0.038568
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_10 (302 depth, 3 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1280, species=Staphylococcus aureus, identity=99.93%, nm=1, EM_abundance=0.216056
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1280, species=Staphylococcus aureus, identity=99.93%, nm=1, EM_abundance=0.216056
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=1280, species=Staphylococcus aureus, identity=99.93%, nm=1, EM_abundance=0.216056
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_10: tax_id_acc=1280, tax_id_tax=1280, species=Staphylococcus aureus, genus =Staphylococcus, abundance=0.036513
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_11 (277 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1639, species=Listeria monocytogenes, identity=100.00%, nm=0, EM_abundance=0.173860
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_11: tax_id_acc=1639, tax_id_tax=1639, species=Listeria monocytogenes, genus =Listeria, abundance=0.033491
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_12 (258 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1613, species=Limosilactobacillus fermentum, identity=99.93%, nm=1, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1613, species=Limosilactobacillus fermentum, identity=99.93%, nm=1, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_12: tax_id_acc=1613, tax_id_tax=1613, species=Limosilactobacillus fermentum, genus =Limosilactobacillus, abundance=0.031193
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_13 (246 depth, 2 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1280, species=Staphylococcus aureus, identity=100.00%, nm=0, EM_abundance=0.216056
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_13: tax_id_acc=1280, tax_id_tax=1280, species=Staphylococcus aureus, genus =Staphylococcus, abundance=0.029742
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_14 (196 depth, 3 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1613, species=Limosilactobacillus fermentum, identity=99.93%, nm=1, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=1613, species=Limosilactobacillus fermentum, identity=99.93%, nm=1, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=1613, species=Limosilactobacillus fermentum, identity=99.93%, nm=1, EM_abundance=0.159715
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_14: tax_id_acc=1613, tax_id_tax=1613, species=Limosilactobacillus fermentum, genus =Limosilactobacillus, abundance=0.023697
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_15 (179 depth, 1 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_15: tax_id_acc=1423, tax_id_tax=1423, species=Bacillus subtilis, genus =Bacillus, abundance=0.021642
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] ASV ASV_16 (165 depth, 3 total hits):
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.256) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.256) DEBUG [savont::classify] Classified ASV ASV_16: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.019949
+(2026-04-22 23:40:36.281) DEBUG [savont::classify] ASV ASV_17 (131 depth, 2 total hits):
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #1: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #2: tax_id=1423, species=Bacillus subtilis, identity=100.00%, nm=0, EM_abundance=0.179296
+(2026-04-22 23:40:36.281) DEBUG [savont::classify] Classified ASV ASV_17: tax_id_acc=1423, tax_id_tax=1423, species=Bacillus subtilis, genus =Bacillus, abundance=0.015838
+(2026-04-22 23:40:36.281) DEBUG [savont::classify] ASV ASV_18 (125 depth, 5 total hits):
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #1: tax_id=287, species=Pseudomonas aeruginosa, identity=100.00%, nm=0, EM_abundance=0.015113
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #2: tax_id=287, species=Pseudomonas aeruginosa, identity=100.00%, nm=0, EM_abundance=0.015113
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #3: tax_id=287, species=Pseudomonas aeruginosa, identity=100.00%, nm=0, EM_abundance=0.015113
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #4: tax_id=287, species=Pseudomonas aeruginosa, identity=100.00%, nm=0, EM_abundance=0.015113
+(2026-04-22 23:40:36.281) DEBUG [savont::classify]   Hit #5: tax_id=1978467, species=Pseudomonas sp. AK6U, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.281) DEBUG [savont::classify] Classified ASV ASV_18: tax_id_acc=287, tax_id_tax=287, species=Pseudomonas aeruginosa, genus =Pseudomonas, abundance=0.015113
+(2026-04-22 23:40:36.281) DEBUG [savont::classify] ASV ASV_19 (86 depth, 1 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=28901, species=Salmonella enterica, identity=99.93%, nm=1, EM_abundance=0.070245
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_19: tax_id_acc=28901, tax_id_tax=28901, species=Salmonella enterica, genus =Salmonella, abundance=0.010398
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] ASV ASV_20 (84 depth, 4 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #4: tax_id=622, species=Shigella dysenteriae, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_20: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.010156
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] ASV ASV_21 (82 depth, 6 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #4: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #5: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #6: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_21: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.009914
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] ASV ASV_22 (82 depth, 5 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=99.93%, nm=1, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=99.93%, nm=1, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=99.93%, nm=1, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #4: tax_id=562, species=Escherichia coli, identity=99.93%, nm=1, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #5: tax_id=562, species=Escherichia coli, identity=99.93%, nm=1, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_22: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.009914
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] ASV ASV_23 (75 depth, 5 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #4: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #5: tax_id=624, species=Shigella sonnei, identity=100.00%, nm=0, EM_abundance=0.000000
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_23: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.009068
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] ASV ASV_24 (63 depth, 4 total hits):
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #1: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #2: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #3: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify]   Hit #4: tax_id=562, species=Escherichia coli, identity=100.00%, nm=0, EM_abundance=0.066618
+(2026-04-22 23:40:36.282) DEBUG [savont::classify] Classified ASV ASV_24: tax_id_acc=562, tax_id_tax=562, species=Escherichia coli, genus =Escherichia, abundance=0.007617
+(2026-04-22 23:40:36.325) INFO [savont::classify] Wrote species abundance table to 10k_zmock1_savont/species_abundance.tsv
+(2026-04-22 23:40:36.353) INFO [savont::classify] Wrote genus abundance table to 10k_zmock1_savont/genus_abundance.tsv
+(2026-04-22 23:40:36.383) INFO [savont::classify] Wrote ASV mappings table to 10k_zmock1_savont/asv_mappings.tsv
+(2026-04-22 23:40:36.383) INFO [savont::classify] Classification complete! Classified 25/25 ASVs
+(2026-04-22 23:40:36.383) INFO [savont::classify] Classified 25/25 ASVs at species level
+(2026-04-22 23:40:36.383) INFO [savont::classify] Classified 25/25 ASVs at genus level

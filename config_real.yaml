@@ -1,0 +1,40 @@
+# Configuration for ASV benchmarking pipeline
+
+# Samples to process
+ont_samples:
+  - AD1_ont
+  - WWTP1_ont
+  - Zfecal1_ont
+  - Soil1_ont
+    #  - FBB38036_bam_pass.2
+    #  - FBB38036_bam_pass.3
+    #  - FBB38036_bam_pass.4
+
+# Input directory for raw reads
+reads_dir: "reads/real_data"
+
+# Primer type and sequences
+primer_type: "fl"  # full length (fl) or operon (opr)
+
+# Cutadapt primer sequences
+primers:
+  fl: "AGRGTTYGATYMTGGCTCAG...TGYACWCACCGCCCGTC"
+  opr: "AGRGTTYGATYMTGGCTCAG...GTTTGGCACCTCGATGTCG"
+
+# Subsampling fractions (1 = no subsampling)
+subsample_fractions:
+  - 1
+  - 0.33      # 1/5
+  - 0.111     # 1/5
+  - 0.037      # 1/5
+  - 0.012
+  - 0.004     # 1/25
+
+# Number of threads for parallel processing
+threads: 20
+
+# Minimum unique size for usearch
+min_unique_size: 2
+
+# Error rate for cutadapt
+cutadapt_error_rate: 0.1

@@ -1,0 +1,16 @@
+final_consensus_0_depth_40	4390	0	4390	+	Staphylococcus_4;size=1	4391	0	4390	4390	4390	36	NM:i:0	ms:i:8780	AS:i:8780	nn:i:0	tp:A:P	cm:i:800	s1:i:4387	s2:i:4326	de:f:0	rl:i:0	cs:Z::4390
+final_consensus_1_depth_23	4287	0	4287	+	Listeria_2_5;size=1	4291	0	4287	4287	4287	4	NM:i:0	ms:i:8574	AS:i:8574	nn:i:0	tp:A:P	cm:i:790	s1:i:4280	s2:i:4277	de:f:0	rl:i:0	cs:Z::4287
+final_consensus_2_depth_18	4455	0	4455	+	Pseudomonas_1_2_3_4;size=1	4456	0	4455	4455	4455	60	NM:i:0	ms:i:8910	AS:i:8910	nn:i:0	tp:A:P	cm:i:802	s1:i:4449	s2:i:1555	de:f:0	rl:i:0	cs:Z::4455
+final_consensus_3_depth_17	4205	0	4205	+	Bacillus_4_5;size=1	4210	1	4206	4205	4205	4	NM:i:0	ms:i:8410	AS:i:8410	nn:i:0	tp:A:P	cm:i:778	s1:i:4191	s2:i:4187	de:f:0	rl:i:0	cs:Z::4205
+final_consensus_4_depth_14	4511	0	4511	+	Staphylococcus_2;size=1	4512	0	4511	4511	4511	54	NM:i:0	ms:i:9022	AS:i:9022	nn:i:0	tp:A:P	cm:i:818	s1:i:4508	s2:i:4409	de:f:0	rl:i:0	cs:Z::4511
+final_consensus_5_depth_11	4465	0	4465	+	Staphylococcus_1;size=1	4466	0	4465	4465	4465	42	NM:i:0	ms:i:8930	AS:i:8930	nn:i:0	tp:A:P	cm:i:810	s1:i:4462	s2:i:4409	de:f:0	rl:i:0	cs:Z::4465
+final_consensus_6_depth_10	4267	0	4267	+	Lactobacillus_1;size=1	4268	0	4267	4267	4267	47	NM:i:0	ms:i:8534	AS:i:8534	nn:i:0	tp:A:P	cm:i:781	s1:i:4252	s2:i:4180	de:f:0	rl:i:0	cs:Z::4267
+final_consensus_7_depth_9	4357	0	4357	+	Escherichia_3;size=1	4358	0	4357	4357	4357	4	NM:i:0	ms:i:8714	AS:i:8714	nn:i:0	tp:A:P	cm:i:796	s1:i:4351	s2:i:4350	de:f:0	rl:i:0	cs:Z::4357
+final_consensus_8_depth_8	4207	0	4207	+	Bacillus_9;size=1	4210	0	4207	4207	4207	15	NM:i:0	ms:i:8414	AS:i:8414	nn:i:0	tp:A:P	cm:i:780	s1:i:4199	s2:i:4181	de:f:0	rl:i:0	cs:Z::4207
+final_consensus_9_depth_7	4450	0	4450	+	Escherichia_1;size=1	4451	0	4450	4450	4450	60	NM:i:0	ms:i:8900	AS:i:8900	nn:i:0	tp:A:P	cm:i:823	s1:i:4444	s2:i:4352	de:f:0	rl:i:0	cs:Z::4450
+final_consensus_10_depth_7	4290	0	4290	+	Listeria_1;size=1	4291	0	4290	4290	4290	4	NM:i:0	ms:i:8580	AS:i:8580	nn:i:0	tp:A:P	cm:i:792	s1:i:4280	s2:i:4277	de:f:0	rl:i:0	cs:Z::4290
+final_consensus_11_depth_7	4257	0	4257	+	Lactobacillus_3;size=1	4258	0	4257	4257	4257	44	NM:i:0	ms:i:8514	AS:i:8514	nn:i:0	tp:A:P	cm:i:786	s1:i:4242	s2:i:4180	de:f:0	rl:i:0	cs:Z::4257
+final_consensus_12_depth_6	4515	0	4515	+	Staphylococcus_3;size=1	4516	0	4515	4515	4515	60	NM:i:0	ms:i:9030	AS:i:9030	nn:i:0	tp:A:P	cm:i:819	s1:i:4512	s2:i:4339	de:f:0	rl:i:0	cs:Z::4515
+final_consensus_13_depth_6	4451	0	4451	+	Escherichia_4;size=1	4452	0	4451	4451	4451	60	NM:i:0	ms:i:8902	AS:i:8902	nn:i:0	tp:A:P	cm:i:823	s1:i:4445	s2:i:4352	de:f:0	rl:i:0	cs:Z::4451
+final_consensus_14_depth_5	4440	0	4440	+	Escherichia_6;size=1	4441	0	4440	4440	4440	60	NM:i:0	ms:i:8880	AS:i:8880	nn:i:0	tp:A:P	cm:i:822	s1:i:4434	s2:i:4296	de:f:0	rl:i:0	cs:Z::4440
+final_consensus_15_depth_4	4452	0	4452	+	Lactobacillus_2;size=1	4453	0	4452	4452	4452	59	NM:i:0	ms:i:8904	AS:i:8904	nn:i:0	tp:A:P	cm:i:817	s1:i:4437	s2:i:4331	de:f:0	rl:i:0	cs:Z::4452

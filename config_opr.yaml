@@ -1,0 +1,62 @@
+# Configuration for ASV benchmarking pipeline — ONT + HiFi/PB (operon)
+
+samples:
+  v1v8_zmock1_opr:
+    platform: ont
+    reads: "reads/morten-zymo-simple-opr/v1v8_zmock1_opr.fastq.gz"
+    fractions:
+      - 300.0000000000001
+      - 491.3681120862196
+      - 804.8087385839177
+      - 1318.1911682282378
+      - 2159.0570190034573
+      - 3536.305904380761
+      - 5792.093186649751
+      - 9486.832980505142
+      - 15538.424037693643
+      - 25450.286947322187
+      - 41684.8648311941
+      - 68275.37778224376
+      - 111827.81160944818
+      - 183162.06889755986
+      - 300000.0000000001
+
+  ziels_pb_zymo_opr:
+    platform: pb
+    reads: "reads/ziels_pb_zymo/ziels_pb_zymo_opr.fastq.gz"
+    fractions:
+      - 50.0
+      - 81.8947
+      - 134.1348
+      - 219.6985
+      - 359.8428
+      - 589.3843
+      - 965.3489
+      - 1581.1388
+      - 2589.7373
+      - 4241.7145
+      - 6947.4775
+      - 11379.2296
+      - 18637.9686
+      - 30527.0115
+      - 50000.0
+
+# Reference sequences
+reference: "morten_data/OPR_bacterial_amplicons.fasta.gz"
+
+# Primer type and sequences
+primer_type: "opr"
+
+# Cutadapt primer sequences
+primers:
+  fl: "AGRGTTYGATYMTGGCTCAG...TGYACWCACCGCCCGTC"
+  opr: "AGRGTTYGATYMTGGCTCAG...GTTTGGCACCTCGATGTCG"
+
+# Number of threads for parallel processing
+threads: 20
+
+# Minimum unique size for usearch
+min_unique_size: 2
+
+# Error rate for cutadapt
+cutadapt_error_rate: 0.1
