@@ -1,0 +1,15 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+otutab WWTP1_ont_frac0.037.uniques.fa
+00:00 1.2Mb .. ...  (working)00:00 2.0Mb ... .. Loading seqs.00:00 8.5Mb ...... Loading seqs.
+00:00 5.6Mb   0.0% Masking (fastnucleo)00:00 5.6Mb 100.0% Masking (fastnucleo)
+00:00 6.5Mb   0.0% Udb seqs00:01 6.8Mb 100.0% Udb seqs
+00:01 6.8Mb   0.0% Alloc rows00:01 6.8Mb 100.0% Alloc rows
+00:01 6.8Mb   0.0% Build udb index00:01  18Mb 100.0% Build udb index
+00:01  18Mb ...... Starting 20 threads
+00:01  18Mb   0.0% Mapping 00:01  89Mb 0.527% Mapping 121 OTUs, 1 samples, 213 assigned (87.5%)00:01  95Mb  4.10% Mapping 630 OTUs, 1 samples, 1259 assigned (80.0%)00:02  99Mb  7.69% Mapping 939 OTUs, 1 samples, 2321 assigned (79.9%)00:02 100Mb  11.4% Mapping 1159 OTUs, 1 samples, 3391 assigned (79.4%)00:03 100Mb  15.0% Mapping 1304 OTUs, 1 samples, 4459 assigned (79.5%)00:03 101Mb  18.5% Mapping 1424 OTUs, 1 samples, 5508 assigned (79.7%)00:04 101Mb  22.0% Mapping 1522 OTUs, 1 samples, 6536 assigned (79.7%)00:04 102Mb  25.5% Mapping 1608 OTUs, 1 samples, 7559 assigned (79.6%)00:05 102Mb  29.0% Mapping 1678 OTUs, 1 samples, 8626 assigned (79.7%)00:05 102Mb  32.6% Mapping 1743 OTUs, 1 samples, 9656 assigned (79.6%)00:06 102Mb  36.1% Mapping 1788 OTUs, 1 samples, 10.7k assigned (79.7%)00:06 104Mb  39.6% Mapping 1829 OTUs, 1 samples, 11.7k assigned (79.7%)00:07 104Mb  43.1% Mapping 1853 OTUs, 1 samples, 12.7k assigned (79.5%)00:07 105Mb  46.7% Mapping 1877 OTUs, 1 samples, 13.8k assigned (79.6%)00:08 105Mb  50.3% Mapping 1913 OTUs, 1 samples, 14.8k assigned (79.4%)00:08 106Mb  53.9% Mapping 1935 OTUs, 1 samples, 15.9k assigned (79.4%)00:09 108Mb  57.0% Mapping 1956 OTUs, 1 samples, 16.8k assigned (79.3%)00:09 108Mb  60.0% Mapping 1969 OTUs, 1 samples, 17.7k assigned (79.3%)00:10 108Mb  63.1% Mapping 1996 OTUs, 1 samples, 18.6k assigned (79.3%)00:10 108Mb  66.1% Mapping 2007 OTUs, 1 samples, 19.5k assigned (79.3%)00:11 108Mb  69.2% Mapping 2020 OTUs, 1 samples, 20.4k assigned (79.4%)00:11 108Mb  72.2% Mapping 2031 OTUs, 1 samples, 21.3k assigned (79.4%)00:12 108Mb  75.0% Mapping 2046 OTUs, 1 samples, 22.1k assigned (79.4%)00:12 109Mb  78.1% Mapping 2062 OTUs, 1 samples, 23.0k assigned (79.4%)00:13 109Mb  81.1% Mapping 2069 OTUs, 1 samples, 23.9k assigned (79.5%)00:13 109Mb  84.1% Mapping 2082 OTUs, 1 samples, 24.8k assigned (79.5%)00:14 109Mb  87.1% Mapping 2088 OTUs, 1 samples, 25.7k assigned (79.4%)00:14 109Mb  90.1% Mapping 2096 OTUs, 1 samples, 26.6k assigned (79.5%)00:15 109Mb  93.2% Mapping 2106 OTUs, 1 samples, 27.5k assigned (79.5%)00:15 109Mb  96.2% Mapping 2112 OTUs, 1 samples, 28.3k assigned (79.5%)00:16 110Mb  99.2% Mapping 2120 OTUs, 1 samples, 29.2k assigned (79.5%)00:16 107Mb 100.0% Mapping 2123 OTUs, 1 samples, 29.5k assigned (79.5%)
+00:16 107Mb ...... 29474 / 37078 mapped to OTUs (79.5%)
+00:16 107Mb ...... Finished
+

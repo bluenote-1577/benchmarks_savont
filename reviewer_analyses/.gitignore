@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+
+# Expensive analysis outputs; compact summary tables are retained one level up.
+min_cluster_sensitivity/alignments/
+min_cluster_sensitivity/results/
+primary_clustering_threshold_sensitivity/alignments/
+primary_clustering_threshold_sensitivity/results/
+read_accuracy_sensitivity/alignments/
+# Full Badread logs are retained as *.log.gz; uncompressed copies remain local.
+read_accuracy_sensitivity/logs/*.log
+read_accuracy_sensitivity/results/
+read_accuracy_sensitivity/simulated/
+read_accuracy_sensitivity/subsampled/
+zotu_recall_by_depth/alignments/
+# Direct-mapping logs are compact enough to retain as execution provenance.
+zotu_recall_by_depth/direct_hifi_otutabs/*.uniques.fa
+
+# ITS/18S raw data, databases, installed environments, and full run trees.
+its_18s_benchmark/databases/
+its_18s_benchmark/envs/
+its_18s_benchmark/external/
+# ITS/18S tool logs are retained; the largest BaNaNA logs are gzip-compressed.
+its_18s_benchmark/results/*
+!its_18s_benchmark/results/subsampled/
+its_18s_benchmark/results/subsampled/*
+!its_18s_benchmark/results/subsampled/*.audit.tsv
+!its_18s_benchmark/results/banana/
+its_18s_benchmark/results/banana/*
+!its_18s_benchmark/results/banana/18s_*/
+its_18s_benchmark/results/banana/18s_*/*
+!its_18s_benchmark/results/banana/18s_*/run_summary.tsv
+its_18s_benchmark/source_data/
+its_18s_benchmark/TEMP_*/

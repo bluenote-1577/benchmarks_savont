@@ -26,7 +26,7 @@ Download from SRA and place in the appropriate directories:
 | `reads/real_data/Zfecal1_ont.fastq.gz` | [SRR36567672](https://www.ncbi.nlm.nih.gov/sra/SRR36567672) | Fecal |
 | `reads/real_data/Soil1_ont.fastq.gz` | [SRR36567678](https://www.ncbi.nlm.nih.gov/sra/SRR36567678) | Soil |
 
-**Note**: For HiFi V1V8 data, this is obtained by trimming the V8 region onward using cutadapt, so it's the same file as the operon reads. 
+**Note**: For HiFi V1V8 data, this is obtained by trimming the V8 region onward using cutadapt, so it's the same file as the operon reads.
 
 ### Reference Data
 
@@ -88,6 +88,29 @@ Results are written to `results/` with timing benchmarks in `results/benchmarks/
 - `real_notebook/real_analysis.ipynb` requires running `snakemake -s snakefile_real.snk` first
 - For the EMU notebook, first run `emu abundance` with `--keep-files --keep-counts`, then run `emu_analysis.py`
 
+## Reviewer analyses
+
+Compact final tables and plotting code for the revision experiments are in
+`reviewer_analyses/`. They cover abundance-stratified HiFi agreement, minimum
+cluster size, primary clustering identity, simulated read accuracy, HiFi zOTU
+recall by observed ONT depth, and ITS/18S expected-genus recovery. Large raw and
+temporary outputs are intentionally omitted.
+
+To regenerate all six reviewer figures from the included tables:
+
+```bash
+conda env create -f reviewer_analyses/plotting_environment.yaml
+conda activate savont-reviewer-plots
+MPLCONFIGDIR=/tmp/matplotlib-reviewer \
+python reviewer_analyses/plot_reviewer_figures.py
+```
+
+See `reviewer_analyses/README.md` for the input table associated with each
+figure and commands for regenerating selected panels. A command-by-command
+guide for rebuilding the ITS/18S inputs and full benchmark is available in
+`reviewer_analyses/its_18s_benchmark/HOWTO.md`; compact logs from the actual
+reviewer-analysis runs are retained alongside their result tables.
+
 ## Directory Structure
 
 ```
@@ -101,5 +124,10 @@ Results are written to `results/` with timing benchmarks in `results/benchmarks/
 ├── results/                     # Pipeline outputs
 ├── analyze_paf.ipynb            # Main analysis notebook
 ├── real_notebook/               # Real data analysis
+├── reviewer_analyses/           # Compact revision tables and plotting code
 └── emu_analysis_real/           # EMU analysis
 ```
+
+### AI usage
+
+We used Claude Sonnet v4.6 and GPT-Sol 5.6 to help with scripting and organize this repository. 

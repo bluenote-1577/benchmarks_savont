@@ -1,0 +1,399 @@
+from pathlib import Path
+
+
+ANALYSIS = Path(workflow.basedir)
+configfile: str(ANALYSIS / "config.yaml")
+
+DEPTHS = config["read_depths"]
+MARKERS = list(config["samples"])
+METHODS_BY_MARKER = {
+    "18s": ["savont", "unoise", "unoise_min3", "banana"],
+    "its": ["savont", "unoise", "unoise_min3"],
+}
+METHODS = ["savont", "unoise", "unoise_min3", "banana"]
+SAVONT = config["tools"]["savont"]
+USEARCH = config["tools"]["usearch"]
+MINIMAP2 = config["tools"]["minimap2"]
+BANANA = ANALYSIS / "external" / "BaNaNA"
+BANANA_ENV = Path(config["banana"]["environment"])
+PR2 = Path(config["banana"]["pr2_database"])
+THREADS = config["threads"]
+EXPECTED = ANALYSIS / "expected_taxa.tsv"
+SCRIPTS = ANALYSIS / "scripts"
+RESULTS = ANALYSIS / "results"
+DATABASES = ANALYSIS / "databases"
+
+
+wildcard_constraints:
+    marker="(18s|its)",
+    method="(savont|unoise|unoise_min3|banana)",
+    depth="[0-9]+"
+
+
+def sample_value(wildcards, key):
+    return config["samples"][wildcards.marker][key]
+
+
+def database_dir(wildcards):
+    return str(DATABASES / sample_value(wildcards, "database"))
+
+
+def database_marker(wildcards):
+    return str(Path(database_dir(wildcards)) / ".savont_db")
+
+
+def database_index(wildcards):
+    database = sample_value(wildcards, "database")
+    if database == "silva-138.2":
+        return str(DATABASES / database / "SILVA_138.2_SSURef_NR99_tax_silva_trunc.fasta.gz.mmi")
+    return str(DATABASES / database / "unites_sequences.fasta.mmi")
+
+
+def method_input_dir(wildcards):
+    if wildcards.method == "savont":
+        return str(RESULTS / "savont" / f"{wildcards.marker}_{wildcards.depth}")
+    if wildcards.method == "banana":
+        return str(RESULTS / "banana_classify_input" / f"18s_{wildcards.depth}")
+    return str(RESULTS / "unoise_classify_input" / wildcards.method / f"{wildcards.marker}_{wildcards.depth}")
+
+
+def method_fasta(wildcards):
+    return str(Path(method_input_dir(wildcards)) / "final_asvs.fasta")
+
+
+SCORE_FILES = [
+    str(RESULTS / "scores" / marker / method / f"{depth}.summary.tsv")
+    for marker in MARKERS
+    for method in METHODS_BY_MARKER[marker]
+    for depth in DEPTHS
+]
+DETAIL_FILES = [
+    str(RESULTS / "scores" / marker / method / f"{depth}.details.tsv")
+    for marker in MARKERS
+    for method in METHODS_BY_MARKER[marker]
+    for depth in DEPTHS
+]
+
+
+rule all:
+    input:
+        ANALYSIS / "figures" / "expected_genera_recovered.pdf",
+        ANALYSIS / "figures" / "expected_genera_recovered.svg",
+        ANALYSIS / "expected_genera_recovery.tsv",
+        ANALYSIS / "expected_genera_recovery_details.tsv",
+        expand(str(RESULTS / "subsampled" / "{marker}.audit.tsv"), marker=MARKERS),
+
+
+rule nested_subsamples:
+    input:
+        lambda wildcards: sample_value(wildcards, "reads")
+    output:
+        reads=expand(
+            str(RESULTS / "subsampled" / "{{marker}}_{depth}.fastq"),
+            depth=DEPTHS,
+        ),
+        audit=str(RESULTS / "subsampled" / "{marker}.audit.tsv"),
+    params:
+        output_dir=RESULTS / "subsampled",
+        depths=" ".join(map(str, DEPTHS)),
+        seed=config["seed"],
+        min_length=lambda wildcards: sample_value(wildcards, "min_length"),
+        max_length=lambda wildcards: sample_value(wildcards, "max_length"),
+    shell:
+        """
+        python {SCRIPTS}/nested_sample_fastq.py \
+          --input {input} --output-dir {params.output_dir} --prefix {wildcards.marker} \
+          --depths {params.depths} --seed {params.seed} \
+          --min-length {params.min_length} --max-length {params.max_length} \
+          --audit {output.audit}
+        """
+
+
+rule download_silva:
+    output:
+        marker=DATABASES / "silva-138.2" / ".savont_db",
+        fasta=DATABASES / "silva-138.2" / "SILVA_138.2_SSURef_NR99_tax_silva_trunc.fasta.gz",
+        taxonomy=DATABASES / "silva-138.2" / "taxmap_slv_ssu_ref_nr_138.2.txt",
+    shell:
+        "{SAVONT} download --location {DATABASES} --dbs silva-138.2"
+
+
+rule prepare_unites:
+    input:
+        config["unites_archive"]
+    output:
+        marker=DATABASES / "unites-10.0" / ".savont_db",
+        fasta=DATABASES / "unites-10.0" / "unites_sequences.fasta",
+        taxonomy=DATABASES / "unites-10.0" / "unites_taxonomy.tsv",
+    shell:
+        "python {SCRIPTS}/prepare_unites.py --archive {input} --output-dir {DATABASES}/unites-10.0"
+
+
+rule index_silva:
+    input:
+        rules.download_silva.output.fasta
+    output:
+        DATABASES / "silva-138.2" / "SILVA_138.2_SSURef_NR99_tax_silva_trunc.fasta.gz.mmi"
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "database" / "silva_index.log"
+    shell:
+        "{MINIMAP2} -t {threads} -d {output} {input} 2> {log}"
+
+
+rule index_unites:
+    input:
+        rules.prepare_unites.output.fasta
+    output:
+        DATABASES / "unites-10.0" / "unites_sequences.fasta.mmi"
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "database" / "unites_index.log"
+    shell:
+        "{MINIMAP2} -t {threads} -d {output} {input} 2> {log}"
+
+
+rule savont_asv:
+    input:
+        RESULTS / "subsampled" / "{marker}_{depth}.fastq"
+    output:
+        fasta=RESULTS / "savont" / "{marker}_{depth}" / "final_asvs.fasta",
+        table=RESULTS / "savont" / "{marker}_{depth}" / "feature-table.tsv",
+    params:
+        outdir=lambda wildcards: str(
+            RESULTS / "savont" / f"{wildcards.marker}_{wildcards.depth}"
+        ),
+        min_length=lambda wildcards: sample_value(wildcards, "min_length"),
+        max_length=lambda wildcards: sample_value(wildcards, "max_length"),
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "savont" / "{marker}_{depth}.log"
+    shell:
+        """
+        {SAVONT} asv -t {threads} {input} -o {params.outdir} \
+          --min-read-length {params.min_length} --max-read-length {params.max_length} \
+          > {log} 2>&1
+        """
+
+
+rule unoise_uniques:
+    input:
+        RESULTS / "subsampled" / "{marker}_{depth}.fastq"
+    output:
+        RESULTS / "unoise" / "uniques" / "{marker}_{depth}.fa"
+    log:
+        ANALYSIS / "logs" / "unoise" / "{marker}_{depth}.uniques.log"
+    shell:
+        """
+        {USEARCH} -fastx_uniques {input} -sizeout -relabel Sample_ \
+          -minuniquesize 2 -fastaout {output} > {log} 2>&1
+        """
+
+
+rule unoise_denoise:
+    input:
+        RESULTS / "unoise" / "uniques" / "{marker}_{depth}.fa"
+    output:
+        RESULTS / "unoise" / "{method}" / "{marker}_{depth}" / "zotus.fa"
+    params:
+        minsize=lambda wildcards: "" if wildcards.method == "unoise" else "--minsize 3"
+    log:
+        ANALYSIS / "logs" / "unoise" / "{method}" / "{marker}_{depth}.denoise.log"
+    shell:
+        """
+        python {SCRIPTS}/run_unoise.py --usearch {USEARCH} --input {input} \
+          --output {output} --log {log} {params.minsize}
+        """
+
+
+rule unoise_mapping_uniques:
+    input:
+        RESULTS / "subsampled" / "{marker}_{depth}.fastq"
+    output:
+        RESULTS / "unoise" / "mapping_uniques" / "{marker}_{depth}.fa"
+    log:
+        ANALYSIS / "logs" / "unoise" / "{marker}_{depth}.mapping_uniques.log"
+    shell:
+        """
+        {USEARCH} -fastx_uniques {input} -sizeout -relabel Sample_ \
+          -minuniquesize 1 -fastaout {output} > {log} 2>&1
+        """
+
+
+rule unoise_otutab:
+    input:
+        mapping=RESULTS / "unoise" / "mapping_uniques" / "{marker}_{depth}.fa",
+        zotus=RESULTS / "unoise" / "{method}" / "{marker}_{depth}" / "zotus.fa",
+    output:
+        RESULTS / "unoise" / "{method}" / "{marker}_{depth}" / "otutab.tsv"
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "unoise" / "{method}" / "{marker}_{depth}.otutab.log"
+    shell:
+        """
+        if [ -s {input.zotus} ]; then
+          {USEARCH} -otutab {input.mapping} -zotus {input.zotus} -sample_delim _ \
+            -otutabout {output} -threads {threads} > {log} 2>&1
+        else
+          : > {output}
+          : > {log}
+        fi
+        """
+
+
+rule prepare_unoise_classification_input:
+    input:
+        zotus=RESULTS / "unoise" / "{method}" / "{marker}_{depth}" / "zotus.fa",
+        otutab=RESULTS / "unoise" / "{method}" / "{marker}_{depth}" / "otutab.tsv",
+    output:
+        fasta=RESULTS / "unoise_classify_input" / "{method}" / "{marker}_{depth}" / "final_asvs.fasta",
+        table=RESULTS / "unoise_classify_input" / "{method}" / "{marker}_{depth}" / "feature-table.tsv",
+    params:
+        outdir=lambda wildcards: str(
+            RESULTS
+            / "unoise_classify_input"
+            / wildcards.method
+            / f"{wildcards.marker}_{wildcards.depth}"
+        ),
+    shell:
+        """
+        python {SCRIPTS}/prepare_unoise_classification_input.py \
+          --zotus {input.zotus} --otutab {input.otutab} --output-dir {params.outdir} \
+          --sample-name {wildcards.marker}_{wildcards.depth}
+        """
+
+
+rule banana_otu:
+    input:
+        reads=RESULTS / "subsampled" / "18s_{depth}.fastq",
+        pr2=PR2,
+        runner=SCRIPTS / "run_banana_otu.py",
+        error_table=BANANA / "files" / "P_error_table.tsv",
+        scripts=expand(
+            str(BANANA / "scripts" / "{script}"),
+            script=[
+                "calculate_clustering_threshold.py",
+                "mafft_consensus.py",
+                "minimap.py",
+                "add_sample_id.py",
+                "remove_Nseqs.py",
+                "abundance.py",
+            ],
+        ),
+    output:
+        otus=RESULTS / "banana" / "18s_{depth}" / "samples" / "final" / "otus.fasta",
+        abundance=RESULTS / "banana" / "18s_{depth}" / "samples" / "abundance_sample.tsv",
+        summary=RESULTS / "banana" / "18s_{depth}" / "run_summary.tsv",
+    params:
+        outdir=lambda wildcards: str(RESULTS / "banana" / f"18s_{wildcards.depth}"),
+        environment=BANANA_ENV,
+        banana=BANANA,
+        min_length=config["samples"]["18s"]["min_length"],
+        max_length=config["samples"]["18s"]["max_length"],
+        min_quality=config["banana"]["min_mean_quality"],
+        polishing_quality=config["banana"]["min_polishing_quality"],
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "banana" / "18s_{depth}.log"
+    shell:
+        """
+        {params.environment}/bin/python {input.runner} \
+          --input-fastq {input.reads} --output-dir {params.outdir} \
+          --pr2-db {input.pr2} --banana-dir {params.banana} \
+          --tool-prefix {params.environment} --min-length {params.min_length} \
+          --max-length {params.max_length} --min-mean-quality {params.min_quality} \
+          --min-polishing-quality {params.polishing_quality} --threads {threads} \
+          --summary {output.summary} --log {log}
+        """
+
+
+rule prepare_banana_classification_input:
+    input:
+        otus=rules.banana_otu.output.otus,
+        abundance=rules.banana_otu.output.abundance,
+        script=SCRIPTS / "prepare_banana_classification_input.py",
+    output:
+        fasta=RESULTS / "banana_classify_input" / "18s_{depth}" / "final_asvs.fasta",
+        table=RESULTS / "banana_classify_input" / "18s_{depth}" / "feature-table.tsv",
+        id_map=RESULTS / "banana_classify_input" / "18s_{depth}" / "otu_id_map.tsv",
+    params:
+        outdir=lambda wildcards: str(RESULTS / "banana_classify_input" / f"18s_{wildcards.depth}"),
+    shell:
+        """
+        {BANANA_ENV}/bin/python {input.script} --otus {input.otus} \
+          --abundance {input.abundance} --output-dir {params.outdir} \
+          --sample-name 18s_{wildcards.depth}
+        """
+
+
+rule classify:
+    input:
+        fasta=method_fasta,
+        marker=database_marker,
+        index=database_index,
+    output:
+        species=RESULTS / "classification" / "{marker}" / "{method}" / "{depth}" / "species_abundance.tsv",
+        genus=RESULTS / "classification" / "{marker}" / "{method}" / "{depth}" / "genus_abundance.tsv",
+        mappings=RESULTS / "classification" / "{marker}" / "{method}" / "{depth}" / "asv_mappings.tsv",
+    params:
+        input_dir=method_input_dir,
+        output_dir=lambda wildcards: str(
+            RESULTS
+            / "classification"
+            / wildcards.marker
+            / wildcards.method
+            / wildcards.depth
+        ),
+        database=database_dir,
+    threads: THREADS
+    log:
+        ANALYSIS / "logs" / "classification" / "{marker}" / "{method}" / "{depth}.log"
+    shell:
+        """
+        python {SCRIPTS}/run_classify.py --savont {SAVONT} --input-dir {params.input_dir} \
+          --output-dir {params.output_dir} --database {params.database} \
+          --threads {threads} --log {log}
+        """
+
+
+rule score_expected_taxa:
+    input:
+        species=rules.classify.output.species,
+        expected=EXPECTED,
+    output:
+        summary=RESULTS / "scores" / "{marker}" / "{method}" / "{depth}.summary.tsv",
+        details=RESULTS / "scores" / "{marker}" / "{method}" / "{depth}.details.tsv",
+    shell:
+        """
+        python {SCRIPTS}/score_expected_taxa.py --species-table {input.species} \
+          --expected {input.expected} --marker {wildcards.marker} --method {wildcards.method} \
+          --reads {wildcards.depth} --summary {output.summary} --details {output.details}
+        """
+
+
+rule aggregate_results:
+    input:
+        summaries=SCORE_FILES,
+        details=DETAIL_FILES,
+    output:
+        summary=ANALYSIS / "expected_genera_recovery.tsv",
+        details=ANALYSIS / "expected_genera_recovery_details.tsv",
+    shell:
+        """
+        python {SCRIPTS}/aggregate_results.py --summaries {input.summaries} \
+          --details {input.details} --summary-output {output.summary} \
+          --details-output {output.details}
+        """
+
+
+rule plot_recovery:
+    input:
+        summary=rules.aggregate_results.output.summary,
+        script=SCRIPTS / "plot_recovery.py",
+    output:
+        pdf=ANALYSIS / "figures" / "expected_genera_recovered.pdf",
+        svg=ANALYSIS / "figures" / "expected_genera_recovered.svg",
+    params:
+        prefix=ANALYSIS / "figures" / "expected_genera_recovered",
+    shell:
+        "MPLCONFIGDIR=/tmp/matplotlib-its-18s python {input.script} --input {input.summary} --output-prefix {params.prefix}"

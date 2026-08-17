@@ -1,0 +1,2 @@
+marker	source	raw_records	nonempty_records	zero_length_records	savont_length_eligible	configured_min_length	configured_max_length	observed_min_length	q01_length	q05_length	q25_length	median_length	q75_length	q95_length	q99_length	observed_max_length	seed
+18s	its_and_18s_analysis/ERR15092745.18S.fastq	580918	580918	0	525068	1000	2600	54	355.0	897.0	1770.0	1796.0	1804.0	2303.0	2310.0	2596	727271

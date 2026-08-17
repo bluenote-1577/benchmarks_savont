@@ -1,0 +1,8 @@
+name: savont-reviewer-plots
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - matplotlib=3.10
+  - numpy=2.2
+  - pandas=2.2

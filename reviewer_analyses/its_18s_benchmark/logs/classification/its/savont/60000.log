@@ -1,0 +1,22 @@
+(2026-08-08 21:30:49.409) [38;5;27mINFO[0m [savont] COMMAND: /homes9/jshaw/.cargo/bin/savont classify -i /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_60000 -o /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/classification/its/savont/60000 -d /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/unites-10.0 -t 10
+(2026-08-08 21:30:49.410) [38;5;27mINFO[0m [savont] VERSION: 0.6.3
+(2026-08-08 21:30:49.411) [38;5;27mINFO[0m [savont] Starting classification...
+(2026-08-08 21:30:49.412) [38;5;27mINFO[0m [savont::databases] Detected database type 'unites-10.0' for /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/unites-10.0
+(2026-08-08 21:30:49.412) [38;5;27mINFO[0m [savont::taxonomy] Loading UNITES taxonomy from /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/unites-10.0/unites_taxonomy.tsv
+(2026-08-08 21:30:49.666) [38;5;27mINFO[0m [savont::taxonomy] Loaded 156820 UNITES taxonomy entries
+(2026-08-08 21:30:49.666) [38;5;27mINFO[0m [savont::classify] Loading consensus sequences from /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_60000/final_asvs.fasta
+(2026-08-08 21:30:49.667) [38;5;27mINFO[0m [savont::classify] Loaded 10 consensus sequences
+(2026-08-08 21:30:49.694) [38;5;27mINFO[0m [savont::classify] Building minimap2 index from database FASTA: /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/unites-10.0/unites_sequences.fasta
+(2026-08-08 21:30:49.695) [38;5;27mINFO[0m [savont::classify] Loading pre-built minimap2 index: /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/unites-10.0/unites_sequences.fasta.mmi
+(2026-08-08 21:30:50.202) [38;5;27mINFO[0m [savont::classify] Aligning 10 consensus sequences to database
+(2026-08-08 21:30:50.217) [38;5;27mINFO[0m [savont::classify] Collected 16 total mappings from 10 ASVs
+(2026-08-08 21:30:50.222) [38;5;27mINFO[0m [savont::classify] Found 14 unique taxonomic IDs
+(2026-08-08 21:30:50.222) [38;5;27mINFO[0m [savont::classify] Running EM algorithm to distribute abundances
+(2026-08-08 21:30:50.222) [38;5;27mINFO[0m [savont::classify] Starting EM algorithm with 14 taxa and 16 mappings
+(2026-08-08 21:30:50.222) [38;5;27mINFO[0m [savont::classify] EM converged after 2 iterations (max change: 0.000000e0)
+(2026-08-08 21:30:50.249) [38;5;27mINFO[0m [savont::classify] Wrote species abundance table to /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/classification/its/savont/60000/species_abundance.tsv
+(2026-08-08 21:30:50.276) [38;5;27mINFO[0m [savont::classify] Wrote genus abundance table to /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/classification/its/savont/60000/genus_abundance.tsv
+(2026-08-08 21:30:50.305) [38;5;27mINFO[0m [savont::classify] Wrote ASV mappings table to /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/classification/its/savont/60000/asv_mappings.tsv
+(2026-08-08 21:30:50.305) [38;5;27mINFO[0m [savont::classify] Classification complete! Classified 10/10 ASVs
+(2026-08-08 21:30:50.305) [38;5;27mINFO[0m [savont::classify] Classified 6/10 ASVs at species level
+(2026-08-08 21:30:50.305) [38;5;27mINFO[0m [savont::classify] Classified 10/10 ASVs at genus level

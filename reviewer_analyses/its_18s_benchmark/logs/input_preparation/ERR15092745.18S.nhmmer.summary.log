@@ -1,0 +1,16 @@
+# This compact record preserves the header of the original 298 MB nhmmer log.
+# The complete hit table and verbose per-hit report are omitted from Git.
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# query file:                      db/18S_rRNA.hmm
+# target sequence database:        ERR15092745.fa
+# hits tabular output:             ERR15092745.18S.tbl
+# show alignments in output:       no
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        32
+
+Query:       18S_rRNA  [M=1851]
+Accession:   RF01960
+Description: Eukaryotic small subunit ribosomal RNA
+
+Extraction result: 580918 / 580918 hit reads written to ERR15092745.18S.fastq

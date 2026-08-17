@@ -1,0 +1,7 @@
+abundance_bin	asv_observations	perfect_n	NM_1_n	NM_ge_2_n	unmapped_n	pooled_perfect_pct	pooled_wilson_95_ci_low_pct	pooled_wilson_95_ci_high_pct	subsamples_with_asvs	mean_subsample_perfect_pct	median_subsample_perfect_pct	min_subsample_perfect_pct	max_subsample_perfect_pct
+<0.02%	88	79	1	8	0	89.7727	81.6928	94.5255	3	92.2287	90.3226	86.3636	100.0000
+0.02-<0.05%	710	672	8	30	0	94.6479	92.7392	96.0761	6	95.5669	97.7602	84.8485	100.0000
+0.05-<0.1%	897	873	8	16	0	97.3244	96.0497	98.1955	7	98.2422	99.3464	91.6230	100.0000
+0.1-<1%	2012	1966	26	20	0	97.7137	96.9640	98.2816	14	98.5009	98.8392	94.1691	100.0000
+>=1%	305	302	2	1	0	99.0164	97.1485	99.6649	16	99.2588	100.0000	92.3077	100.0000
+Overall	4012	3892	45	75	0	97.0090	96.4353	97.4928	16	98.2296	99.0731	92.3967	100.0000

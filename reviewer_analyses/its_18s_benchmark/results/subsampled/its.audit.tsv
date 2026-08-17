@@ -1,0 +1,2 @@
+marker	source	raw_records	nonempty_records	zero_length_records	savont_length_eligible	configured_min_length	configured_max_length	observed_min_length	q01_length	q05_length	q25_length	median_length	q75_length	q95_length	q99_length	observed_max_length	seed
+its	its_and_18s_analysis/T1_B2_all_trimmed.fq	855782	855779	3	843780	300	1000	0	442.0	486.0	497.0	528.0	801.0	842.0	985.0	129116	727271

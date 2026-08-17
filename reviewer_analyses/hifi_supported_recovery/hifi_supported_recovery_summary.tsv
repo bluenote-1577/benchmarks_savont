@@ -1,0 +1,11 @@
+sample	abundance_group	hifi_asvs	exactly_recovered	exact_recovery_pct
+AD1	>1/10 ONT maximum	13	12	92.3077
+AD1	<=1/10 ONT maximum	1215	1139	93.7449
+Soil1	>1/10 ONT maximum	151	141	93.3775
+Soil1	<=1/10 ONT maximum	1632	1450	88.8480
+WWTP1	>1/10 ONT maximum	74	72	97.2973
+WWTP1	<=1/10 ONT maximum	1900	1762	92.7368
+Zfecal1	>1/10 ONT maximum	42	37	88.0952
+Zfecal1	<=1/10 ONT maximum	808	676	83.6634
+Pooled	>1/10 ONT maximum	280	262	93.5714
+Pooled	<=1/10 ONT maximum	5555	5027	90.4950

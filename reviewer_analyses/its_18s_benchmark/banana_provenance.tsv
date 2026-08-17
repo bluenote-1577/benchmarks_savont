@@ -1,0 +1,14 @@
+component	version_or_value	note
+BaNaNA	e5e65e6deb71eaeb20a9a4cd1161b3d2b64f02a2	Pinned Git commit
+PR2	5.1.1	SSU UTAX reference used for BaNaNA reference chimera filtering only
+PR2_archive_sha256	eaf1d35fc03ca83c65018203803a385f0a6297dffc625db5a56f888ec2ee3872	pr2_version_5.1.1_SSU_UTAX.fasta.gz
+Filtlong	0.2.1	Minimum predicted identity 90; length 1000-2600 nt
+NanoPlot	1.46.1	Used for BaNaNA error-derived clustering threshold
+VSEARCH	2.8.0	BaNaNA-pinned version
+minimap2	2.24-r1122	BaNaNA-pinned version
+MAFFT	7.310	BaNaNA-pinned version
+Racon	1.5.0	BaNaNA-pinned version
+Biopython	1.85	BaNaNA script runtime
+joblib	1.5.1	BaNaNA script runtime
+Barrnap	SKIPPED	Input FASTQ was already extracted to 18S rRNA coordinates
+extracting_rrna.py	SKIPPED	Input FASTQ was already extracted to 18S rRNA coordinates

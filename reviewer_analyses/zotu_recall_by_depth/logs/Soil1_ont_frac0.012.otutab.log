@@ -1,0 +1,15 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+otutab Soil1_ont_frac0.012.uniques.fa
+00:00 1.2Mb .. ...  (working)00:00 2.0Mb ... .. Loading seqs.00:00 9.6Mb ...... Loading seqs.
+00:00 5.7Mb   0.0% Masking (fastnucleo)00:00 5.7Mb 100.0% Masking (fastnucleo)
+00:00 6.6Mb   0.0% Udb seqs00:00 6.9Mb 100.0% Udb seqs
+00:00 6.9Mb   0.0% Alloc rows00:00 6.9Mb 100.0% Alloc rows
+00:00 6.9Mb   0.0% Build udb index00:00  19Mb 100.0% Build udb index
+00:00  18Mb ...... Starting 20 threads
+00:00  18Mb   0.0% Mapping 00:00  74Mb  4.07% Mapping 266 OTUs, 1 samples, 297 assigned (50.7%)00:01  76Mb  11.6% Mapping 598 OTUs, 1 samples, 840 assigned (49.3%)00:01  82Mb  19.1% Mapping 877 OTUs, 1 samples, 1403 assigned (49.7%)00:02  85Mb  26.6% Mapping 1063 OTUs, 1 samples, 1940 assigned (49.3%)00:02  86Mb  34.3% Mapping 1217 OTUs, 1 samples, 2496 assigned (49.2%)00:03  90Mb  42.0% Mapping 1352 OTUs, 1 samples, 3051 assigned (49.1%)00:03  91Mb  49.9% Mapping 1481 OTUs, 1 samples, 3641 assigned (49.3%)00:04  93Mb  57.8% Mapping 1569 OTUs, 1 samples, 4225 assigned (49.4%)00:04  93Mb  65.9% Mapping 1644 OTUs, 1 samples, 4823 assigned (49.4%)00:05  94Mb  74.2% Mapping 1709 OTUs, 1 samples, 5422 assigned (49.3%)00:05  95Mb  82.4% Mapping 1752 OTUs, 1 samples, 6003 assigned (49.2%)00:06  95Mb  90.6% Mapping 1816 OTUs, 1 samples, 6600 assigned (49.2%)00:06  97Mb  98.9% Mapping 1860 OTUs, 1 samples, 7183 assigned (49.1%)00:06  97Mb 100.0% Mapping 1864 OTUs, 1 samples, 7267 assigned (49.0%)
+00:06  97Mb ...... 7267 / 14824 mapped to OTUs (49.0%)
+00:06  97Mb ...... Finished
+

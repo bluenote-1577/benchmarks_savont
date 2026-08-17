@@ -1,0 +1,12 @@
+metric	value
+input_reads	60000
+filtlong_reads	51914
+barrnap_skipped_already_extracted	True
+clustering_identity	0.98
+error_clusters_before_min_size_4	36694
+error_clusters_after_min_size_4	542
+racon_consensuses	542
+reference_nonchimeras	478
+denovo_nonchimeras	478
+final_otus	54
+otu_abundance_sum	14036

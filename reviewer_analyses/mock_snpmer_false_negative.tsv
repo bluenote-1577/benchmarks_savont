@@ -1,0 +1,17 @@
+field	value
+highest_depth_ONT_reads	300000
+ground_truth_ASVs	27
+exact_ground_truth_ASVs_recovered	26
+missed_ground_truth_ASV	Lactobacillus_1;size=1
+closest_recovered_ASV	Lactobacillus_3;size=1
+closest_pair_edit_distance	12
+substitutions_in_shared_amplicon	2
+matching_bases_between_substitutions	4
+substitution_center_spacing_bp	5
+query_insertion_relative_to_recovered_copy_bp	10
+ground_truth_Lactobacillus_1_numreads	52286
+ground_truth_Lactobacillus_1_mean_depth	47528.8
+truth_primary_Lactobacillus_1_reads_in_Savont_assignments	6728
+reads_assigned_to_Lactobacillus_3_ASV	6555
+fraction_assigned_to_Lactobacillus_3_pct	97.4287
+pairwise_cs_tag	:87*ct:4*ag:1251+aatcgctagt:52

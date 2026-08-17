@@ -1,0 +1,81 @@
+(2026-08-08 21:30:50.547) [38;5;27mINFO[0m [savont] COMMAND: /homes9/jshaw/.cargo/bin/savont asv -t 10 /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/subsampled/its_12500.fastq -o /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_12500 --min-read-length 300 --max-read-length 1000
+(2026-08-08 21:30:50.548) [38;5;27mINFO[0m [savont] VERSION: 0.6.3
+(2026-08-08 21:30:50.548) [38;5;27mINFO[0m [savont] SYSTEM NAME: Rocky Linux
+(2026-08-08 21:30:50.548) [38;5;27mINFO[0m [savont] SYSTEM HOST NAME: ara.dfci.harvard.edu
+(2026-08-08 21:30:50.549) [38;5;27mINFO[0m [savont] Created temp directory for intermediate files: /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_12500/temp
+(2026-08-08 21:30:50.549) [38;5;27mINFO[0m [savont] === SAVONT STARTED: Generating ASVs ===
+(2026-08-08 21:30:50.549) [38;5;27mINFO[0m [savont] === STAGE 1: Processing k-mers and polymorphic markers ===
+(2026-08-08 21:30:50.787) [38;5;27mINFO[0m [savont::seq_parse] Finished with k-mer counting in 237.765118ms. Total SNPmers after bloom filter: 162598
+(2026-08-08 21:30:50.791) [38;5;27mINFO[0m [savont::utils] Memory usage after second round of k-mer counting processing --- Memory usage: 0.02 GB
+(2026-08-08 21:30:50.837) [38;5;27mINFO[0m [savont::seq_parse] Removed 138337 SNPmers with counts < 1 in both strands and <= 3 multiplicity.
+(2026-08-08 21:30:50.911) [38;5;27mINFO[0m [savont] Time elapsed in for counting k-mers is: 361.68028ms
+(2026-08-08 21:30:50.959) [38;5;27mINFO[0m [savont::kmer_comp] Finding snpmers...
+(2026-08-08 21:30:51.000) [38;5;27mINFO[0m [savont::kmer_comp] Number of snpmers: 78. 
+(2026-08-08 21:30:51.026) [38;5;27mINFO[0m [savont] Time elapsed in for parsing snpmers is: 67.693313ms
+(2026-08-08 21:30:51.027) [38;5;27mINFO[0m [savont::utils] STAGE 1 DONE: Obtained SNPmers --- Memory usage: 0.01 GB
+(2026-08-08 21:30:51.054) [38;5;27mINFO[0m [savont] Using blockmers: false
+(2026-08-08 21:30:51.054) [38;5;27mINFO[0m [savont] Getting reads...
+(2026-08-08 21:30:51.080) [38;5;27mINFO[0m [savont::kmer_comp] Number of reads removed due to length filtering: 196.
+(2026-08-08 21:30:51.189) [38;5;27mINFO[0m [savont::kmer_comp] Number of valid reads  - 12304. Number of reads below quality threshold - 4457.
+(2026-08-08 21:30:51.194) [38;5;27mINFO[0m [savont::kmer_comp] Mean SNPmer density: 1.20%
+(2026-08-08 21:30:51.194) [38;5;27mINFO[0m [savont::kmer_comp] Mean Blockmer density: 0.00%
+(2026-08-08 21:30:51.201) [38;5;27mINFO[0m [savont] Total reads: 7847, Reads without SNPmers: 3 (0.04%)
+(2026-08-08 21:30:51.201) [38;5;27mINFO[0m [savont] === STAGE 2: Clustering reads by k-mers ===
+(2026-08-08 21:30:51.201) [38;5;27mINFO[0m [savont::asv_cluster] Starting greedy k-mer based clustering...
+(2026-08-08 21:30:51.247) [38;5;27mINFO[0m [savont::asv_cluster] Greedy clustering complete. 27 cluster representatives found
+(2026-08-08 21:30:51.264) [38;5;27mINFO[0m [savont::asv_cluster] K-mer clustering complete. 12 clusters found. Largest cluster: 1887 reads
+(2026-08-08 21:30:51.286) [38;5;27mINFO[0m [savont::asv_cluster] Wrote k-mer clusters to /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_12500/temp/kmer_clusters_stage2.tsv
+(2026-08-08 21:30:51.315) [38;5;27mINFO[0m [savont::utils] STAGE 2 DONE: Clustered reads by k-mers --- Memory usage: 0.06 GB
+(2026-08-08 21:30:51.344) [38;5;27mINFO[0m [savont] === STAGE 3: Secondary clustering of reads by polymorphic markers ===
+(2026-08-08 21:30:51.344) [38;5;27mINFO[0m [savont::asv_cluster] Starting greedy SNPmer-based clustering within k-mer clusters...
+(2026-08-08 21:30:51.348) [38;5;27mINFO[0m [savont::asv_cluster] Wrote SNPmer clusters to /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/results/savont/its_12500/temp/snpmer_clusters_before_reclust2.5.tsv
+(2026-08-08 21:30:51.373) [38;5;27mINFO[0m [savont::asv_cluster] Starting iterative reclustering using consensus representatives...
+(2026-08-08 21:30:51.373) [38;5;27mINFO[0m [savont::asv_cluster] Starting with 12 k-mer groups containing 32 total SNPmer clusters
+(2026-08-08 21:30:51.377) [38;5;27mINFO[0m [savont::asv_cluster] Iteration 1: 18 total merges, 22 total reassignments across 12 k-mer groups
+(2026-08-08 21:30:51.427) [38;5;27mINFO[0m [savont::asv_cluster] Iteration 2: 0 total merges, 0 total reassignments across 12 k-mer groups
+(2026-08-08 21:30:51.448) [38;5;27mINFO[0m [savont::asv_cluster] Convergence reached after 2 iterations
+(2026-08-08 21:30:51.448) [38;5;27mINFO[0m [savont::asv_cluster] Final result: 13 total clusters across 12 k-mer groups
+(2026-08-08 21:30:51.448) [38;5;27mINFO[0m [savont::asv_cluster] SNPmer clustering complete. 13 total SNPmer clusters from 12 k-mer clusters
+(2026-08-08 21:30:51.514) [38;5;27mINFO[0m [savont::utils] STAGE 3 DONE: Clustered reads by polymorphic markers --- Memory usage: 0.06 GB
+(2026-08-08 21:30:51.514) [38;5;27mINFO[0m [savont] === STAGE 4: Generating consensus sequences and analyzing pileupes ===
+(2026-08-08 21:30:51.514) [38;5;27mINFO[0m [savont::alignment] Generating consensus sequences from SNPmer clusters...
+(2026-08-08 21:30:51.701) [38;5;27mINFO[0m [savont::alignment] Wrote 13 consensus sequences to consensus_sequences.fasta
+(2026-08-08 21:30:51.811) [38;5;27mINFO[0m [savont::alignment] Analyzing quality error rates from top 1 clusters
+(2026-08-08 21:30:51.904) [38;5;27mINFO[0m [savont::alignment] Low quality consensus sequences: []
+(2026-08-08 21:30:51.906) [38;5;27mINFO[0m [savont::alignment] Wrote low quality cluster information to low_quality_clusters.tsv
+(2026-08-08 21:30:51.982) [38;5;27mINFO[0m [savont::alignment] Wrote cluster information before filtering to clusters_after_quality_filter_stage4.tsv
+(2026-08-08 21:30:51.983) [38;5;27mINFO[0m [savont::alignment] Polishing complete
+(2026-08-08 21:30:51.991) [38;5;27mINFO[0m [savont::utils] STAGE 4 DONE: Analyzed pileups and estimated consensus qualities --- Memory usage: 0.19 GB
+(2026-08-08 21:30:52.009) [38;5;27mINFO[0m [savont] === STAGE 5: Merging similar consensus sequences ===
+(2026-08-08 21:30:52.035) [38;5;27mINFO[0m [savont::alignment] Removing duplicate consensus sequences based on k-mer similarity
+(2026-08-08 21:30:52.035) [38;5;27mINFO[0m [savont::alignment] Reduced consensus sequences from 13 to 13 after k-mer based deduplication
+(2026-08-08 21:30:52.094) [38;5;27mINFO[0m [savont::alignment] Wrote 13 polished consensus sequences to polished_consensuses.fasta
+(2026-08-08 21:30:52.098) [38;5;27mINFO[0m [savont::alignment] Merging 0 low quality consensuses into high quality consensuses
+(2026-08-08 21:30:52.115) [38;5;27mINFO[0m [savont::alignment] Merging similar consensus sequences based on alignment and depth criteria
+(2026-08-08 21:30:52.116) [38;5;27mINFO[0m [savont::alignment] Consensus merging complete: 13 -> 10 consensuses
+(2026-08-08 21:30:52.220) [38;5;27mINFO[0m [savont::alignment] Wrote 10 merged consensus sequences to merged_consensus_sequences.fasta
+(2026-08-08 21:30:52.223) [38;5;27mINFO[0m [savont::utils] STAGE 5 DONE: Merged similar consensus sequences --- Memory usage: 0.19 GB
+(2026-08-08 21:30:52.256) [38;5;27mINFO[0m [savont] === STAGE 6: Detecting and filtering chimeric consensus sequences ===
+(2026-08-08 21:30:52.256) [38;5;27mINFO[0m [savont::chimera] Starting chimera detection for 10 consensuses
+(2026-08-08 21:30:52.256) [38;5;27mINFO[0m [savont::chimera] Calculating pairwise similarities for 10 consensuses (using decompressed sequences)
+(2026-08-08 21:30:52.263) [38;5;27mINFO[0m [savont::chimera] Filtered 0 chimeric consensuses with mean chimera score NaN and std NaN, 10 remaining
+(2026-08-08 21:30:52.279) [38;5;27mINFO[0m [savont::utils] STAGE 6 DONE: Filtered chimeric consensus sequences --- Memory usage: 0.19 GB
+(2026-08-08 21:30:52.299) [38;5;27mINFO[0m [savont] === Final consensus count after chimera filtering: 10 ===
+(2026-08-08 21:30:52.299) [38;5;27mINFO[0m [savont] === STAGE 7: Refining ASV depths with alignments and EM algorithm ===
+(2026-08-08 21:30:52.300) [38;5;27mINFO[0m [savont::alignment] Refining ASV depths using EM algorithm with k-mer based read mapping
+(2026-08-08 21:30:52.345) [38;5;27mINFO[0m [savont::alignment] Loaded 10 ASVs as TwinReads for k-mer comparison
+(2026-08-08 21:30:52.359) [38;5;27mINFO[0m [savont::alignment] Built SNPmer index with 20 unique splitmers
+(2026-08-08 21:30:52.359) [38;5;27mINFO[0m [savont::alignment] Mapping 7847 reads to 10 ASVs using k-mer comparison
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Filtered 6 reads with ratio > 0.005
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Total assigned reads: 7841
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Total percentage assigned: 99.92%
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Number of unique equivalence classes: 10
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Running EM algorithm with convergence threshold: 1.275348e-6
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] EM converged after 2 iterations (max change: 1.734723e-18)
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] Updating ASV depths based on EM abundances
+(2026-08-08 21:30:54.428) [38;5;27mINFO[0m [savont::alignment] EM refinement complete: 10 ASVs remaining
+(2026-08-08 21:30:54.480) [38;5;27mINFO[0m [savont::utils] STAGE 7 DONE: Refined ASV depths with EM algorithm --- Memory usage: 0.19 GB
+(2026-08-08 21:30:54.510) [38;5;27mINFO[0m [savont] Final consensus count after EM refinement: 10
+(2026-08-08 21:30:54.535) [38;5;27mINFO[0m [savont] Wrote 10 final consensus sequences to final_asvs.fasta
+(2026-08-08 21:30:54.563) [38;5;27mINFO[0m [savont] Wrote feature-table.tsv (QIIME2-compatible)
+(2026-08-08 21:30:54.629) [38;5;27mINFO[0m [savont] === SAVONT COMPLETED SUCCESSFULLY in 4 SECONDS ===

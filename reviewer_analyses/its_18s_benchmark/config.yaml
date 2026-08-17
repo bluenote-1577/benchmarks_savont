@@ -1,0 +1,30 @@
+read_depths: [100, 500, 2500, 12500, 60000, 300000]
+seed: 727271
+threads: 10
+
+tools:
+  # These executables are resolved from PATH. USEARCH is licensed separately.
+  savont: savont
+  usearch: usearch
+  minimap2: minimap2
+
+banana:
+  # BaNaNA commit e5e65e6deb71eaeb20a9a4cd1161b3d2b64f02a2.
+  environment: reviewer_analyses/its_18s_benchmark/envs/banana
+  pr2_database: reviewer_analyses/its_18s_benchmark/databases/pr2-5.1.1/pr2_version_5.1.1_SSU_UTAX.fasta
+  min_mean_quality: 90
+  min_polishing_quality: 20
+
+samples:
+  18s:
+    reads: reviewer_analyses/its_18s_benchmark/input/ERR15092745.18S.fastq
+    min_length: 1000
+    max_length: 2600
+    database: silva-138.2
+  its:
+    reads: reviewer_analyses/its_18s_benchmark/input/T1_B2_all_trimmed.fq
+    min_length: 300
+    max_length: 1000
+    database: unites-10.0
+
+unites_archive: reviewer_analyses/its_18s_benchmark/input/unite-general-dynamic-19.02.2025.tgz

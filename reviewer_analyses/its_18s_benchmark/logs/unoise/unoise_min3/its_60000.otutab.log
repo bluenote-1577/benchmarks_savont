@@ -1,0 +1,15 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+otutab its_60000.fa
+00:00 1.2Mb .. ...  (working)00:00 2.0Mb ... .. Loading seqs.00:00 4.1Mb ...... Loading seqs.
+00:00 2.4Mb   0.0% Masking (fastnucleo)00:00 2.4Mb 100.0% Masking (fastnucleo)
+00:00 3.3Mb   0.0% Udb seqs00:00 3.6Mb 100.0% Udb seqs
+00:00 3.6Mb   0.0% Alloc rows00:00 3.6Mb 100.0% Alloc rows
+00:00 3.6Mb   0.0% Build udb index00:00 3.6Mb 100.0% Build udb index
+00:00 3.4Mb ...... Starting 10 threads
+00:00 3.4Mb   0.0% Mapping 00:00  55Mb  8.21% Mapping 9 OTUs, 1 samples, 4548 assigned (62.2%)00:01  63Mb  26.6% Mapping 9 OTUs, 1 samples, 10.8k assigned (59.8%)00:01  70Mb  42.8% Mapping 9 OTUs, 1 samples, 16.5k assigned (59.7%)00:02  70Mb  58.2% Mapping 9 OTUs, 1 samples, 21.8k assigned (59.6%)00:02  74Mb  75.9% Mapping 9 OTUs, 1 samples, 27.9k assigned (59.3%)00:03  81Mb  91.4% Mapping 9 OTUs, 1 samples, 33.1k assigned (59.1%)00:03  82Mb 100.0% Mapping 9 OTUs, 1 samples, 36.1k assigned (59.1%)
+00:03  82Mb ...... 36098 / 60000 mapped to OTUs (60.2%)
+00:03  82Mb ...... Finished
+

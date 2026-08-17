@@ -1,0 +1,8 @@
+[M::mm_idx_gen::14.053*1.79] collected minimizers
+[M::mm_idx_gen::15.435*2.46] sorted minimizers
+[M::main::16.581*2.36] loaded/built the index for 510495 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 510495
+[M::mm_idx_stat::16.695*2.35] distinct minimizers: 7126775 (61.60% are singletons); average occurrences: 18.870; average spacing: 5.533; total length: 744149927
+[M::main] Version: 2.28-r1221-dirty
+[M::main] CMD: /homes9/jshaw/bin/minimap2 -t 10 -d /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/silva-138.2/SILVA_138.2_SSURef_NR99_tax_silva_trunc.fasta.gz.mmi /hlilab/jshaw/16s_ont/benchmark/reviewer_analyses/its_18s_benchmark/databases/silva-138.2/SILVA_138.2_SSURef_NR99_tax_silva_trunc.fasta.gz
+[M::main] Real time: 18.257 sec; CPU: 39.464 sec; Peak RSS: 4.016 GB

@@ -1,0 +1,13 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+fastx_uniques its_300000.fastq
+00:00 1.2Mb .. ...  (working)00:00 1.9Mb ... .. Loading seqs.00:00  71Mb .... . Loading seqs.00:01 106Mb . .... Loading seqs.00:01 177Mb .. ... Loading seqs.00:02 276Mb ... .. Loading seqs.00:02 353Mb .... . Loading seqs.00:03 424Mb . .... Loading seqs.00:03 514Mb ...... Loading seqs.
+00:03 480Mb ...... CPU has 80 cores, defaulting to 10 threads
+00:03 481Mb .. ...  (working)00:04 483Mb ... .. Unique seqs.00:04 496Mb ...... Unique seqs.
+00:04 502Mb ...... 300000 seqs, 289275 uniques, 287036 singletons (99.2%)
+00:04 502Mb ...... Min size 1, median 1, max 1921, avg 1.04
+00:04 502Mb .... . Writing 289.3k uniques00:04 502Mb . .... Writing 289.3k uniques00:04 502Mb .. ... Writing 289.3k uniques00:05 502Mb ... .. Writing 289.3k uniques00:05 502Mb .... . Writing 289.3k uniques00:06 502Mb . .... Writing 289.3k uniques00:06 502Mb .. ... Writing 289.3k uniques00:07 502Mb ... .. Writing 289.3k uniques00:07 502Mb .... . Writing 289.3k uniques00:08 502Mb . .... Writing 289.3k uniques00:08 502Mb .. ... Writing 289.3k uniques00:09 502Mb ... .. Writing 289.3k uniques00:09 502Mb .... . Writing 289.3k uniques00:10 502Mb . .... Writing 289.3k uniques00:10 502Mb .. ... Writing 289.3k uniques00:11 502Mb ... .. Writing 289.3k uniques00:11 502Mb .... . Writing 289.3k uniques00:12 502Mb . .... Writing 289.3k uniques00:12 502Mb .. ... Writing 289.3k uniques00:13 502Mb ... .. Writing 289.3k uniques00:13 502Mb .... . Writing 289.3k uniques00:14 502Mb . .... Writing 289.3k uniques00:14 502Mb .. ... Writing 289.3k uniques00:15 502Mb ...... Writing 289.3k uniques
+00:15 493Mb ...... Finished
+

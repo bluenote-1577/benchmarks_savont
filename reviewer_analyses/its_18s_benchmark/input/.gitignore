@@ -1,0 +1,6 @@
+*
+!.gitignore
+!README.md
+!input_manifest.tsv
+!ENA_run_metadata.tsv
+!ENA_run_metadata.tsv

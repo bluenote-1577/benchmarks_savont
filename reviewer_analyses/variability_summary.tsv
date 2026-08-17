@@ -1,0 +1,8 @@
+analysis	platform	method	selection	n	mean_pct	sd_pct	min_pct	max_pct
+mock_F1	ONT	Savont	mean ASV depth <100x	5	40.2891	22.8382	13.7931	71.4285
+mock_F1	ONT	UNOISE3_min3	mean ASV depth <100x	5	5.6158	5.8010	0.0000	13.7931
+mock_F1	HiFi	Savont	mean ASV depth <100x	9	74.8307	23.5715	25.8064	94.1176
+mock_F1	HiFi	UNOISE3_min3	mean ASV depth <100x	9	65.0710	36.3464	7.1429	100.0000
+mock_precision	ONT	Savont	all downsampled datasets	15	100.0000	0.0000	100.0000	100.0000
+mock_precision	HiFi	Savont	all downsampled datasets	15	99.1667	1.7252	95.8333	100.0000
+real_HiFi_match	ONT	Savont	16 subsamples under 150,000 reads	16	98.2296	2.1204	92.3967	100.0000

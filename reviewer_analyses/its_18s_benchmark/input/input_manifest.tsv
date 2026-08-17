@@ -1,0 +1,4 @@
+file	source	records	sha256	note
+ERR15092745.18S.fastq	ENA ERR15092745 followed by Barrnap-RF01960/nhmmer extraction	580918	b43c4a770785f9afe110032abcf88c415f4124b60081333ff3dd0e327a2cce16	Extracted 18S coordinates with qualities retained
+T1_B2_all_trimmed.fq	Study-provided trimmed ONT ITS FASTQ	855782	f0861d57df5329f44f9898b5c7af917dc45ec1e7a0cd8330bcc1f2c2836b60b9	Contains three zero-length records retained for input auditing
+unite-general-dynamic-19.02.2025.tgz	UNITE general dynamic release archive	NA	050e948da7f969df597c3576258c952205a68b76b98bd5fd7a7930a91abfe131	Contains sh_general_release_dynamic_all_19.02.2025.fasta and _dev.fasta

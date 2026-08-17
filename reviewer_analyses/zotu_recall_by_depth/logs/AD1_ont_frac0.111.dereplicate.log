@@ -1,0 +1,13 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+fastx_uniques AD1_ont_frac0.111.fastq
+00:00 1.2Mb .. ...  (working)00:00 2.0Mb ... .. Loading seqs.00:00 168Mb .... . Loading seqs.00:01 311Mb . .... Loading seqs.00:01 453Mb .. ... Loading seqs.00:01 455Mb ...... Loading seqs.
+00:01 422Mb ...... CPU has 80 cores, defaulting to 10 threads
+00:02 423Mb ... .. Unique seqs.00:02 430Mb ...... Unique seqs.
+00:02 433Mb ...... 149705 seqs, 149193 uniques, 149035 singletons (99.9%)
+00:02 433Mb ...... Min size 1, median 1, max 96, avg 1.00
+00:02 430Mb .... . Writing 149.2k uniques00:02 430Mb . .... Writing 149.2k uniques00:02 430Mb .. ... Writing 149.2k uniques00:03 430Mb ... .. Writing 149.2k uniques00:03 430Mb .... . Writing 149.2k uniques00:04 430Mb . .... Writing 149.2k uniques00:04 430Mb .. ... Writing 149.2k uniques00:05 430Mb ... .. Writing 149.2k uniques00:05 430Mb .... . Writing 149.2k uniques00:06 430Mb . .... Writing 149.2k uniques00:06 430Mb .. ... Writing 149.2k uniques00:07 430Mb ... .. Writing 149.2k uniques00:07 430Mb .... . Writing 149.2k uniques00:08 430Mb . .... Writing 149.2k uniques00:08 430Mb .. ... Writing 149.2k uniques00:09 430Mb ... .. Writing 149.2k uniques00:09 430Mb .... . Writing 149.2k uniques00:10 430Mb . .... Writing 149.2k uniques00:10 430Mb .. ... Writing 149.2k uniques00:11 430Mb ... .. Writing 149.2k uniques00:11 430Mb .... . Writing 149.2k uniques00:12 430Mb . .... Writing 149.2k uniques00:12 430Mb .. ... Writing 149.2k uniques00:13 430Mb ... .. Writing 149.2k uniques00:13 430Mb .... . Writing 149.2k uniques00:14 430Mb . .... Writing 149.2k uniques00:14 430Mb .. ... Writing 149.2k uniques00:15 430Mb ... .. Writing 149.2k uniques00:15 430Mb .... . Writing 149.2k uniques00:16 430Mb . .... Writing 149.2k uniques00:16 430Mb .. ... Writing 149.2k uniques00:17 430Mb ... .. Writing 149.2k uniques00:17 430Mb .... . Writing 149.2k uniques00:18 430Mb . .... Writing 149.2k uniques00:18 430Mb .. ... Writing 149.2k uniques00:19 430Mb ... .. Writing 149.2k uniques00:19 430Mb .... . Writing 149.2k uniques00:20 430Mb . .... Writing 149.2k uniques00:20 430Mb .. ... Writing 149.2k uniques00:21 430Mb ... .. Writing 149.2k uniques00:21 430Mb .... . Writing 149.2k uniques00:22 430Mb . .... Writing 149.2k uniques00:22 430Mb .. ... Writing 149.2k uniques00:23 430Mb ... .. Writing 149.2k uniques00:23 430Mb .... . Writing 149.2k uniques00:24 430Mb ...... Writing 149.2k uniques
+00:24 428Mb ...... Finished
+

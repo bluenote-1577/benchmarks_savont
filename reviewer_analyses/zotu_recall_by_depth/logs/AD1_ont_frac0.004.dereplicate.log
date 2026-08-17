@@ -1,0 +1,13 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+fastx_uniques AD1_ont_frac0.004.fastq
+00:00 2.0Mb .. ...  (working)00:00 2.0Mb ... .. Loading seqs.00:00  32Mb ...... Loading seqs.
+00:00  17Mb ...... CPU has 80 cores, defaulting to 10 threads
+00:00  17Mb .... . Unique seqs.00:00  18Mb ...... Unique seqs.
+00:00  18Mb ...... 5366 seqs, 5362 uniques, 5358 singletons (99.9%)
+00:00  18Mb ...... Min size 1, median 1, max 2, avg 1.00
+00:00  18Mb . .... Writing 5362 uniques00:00  18Mb ...... Writing 5362 uniques
+00:00  18Mb ...... Finished
+

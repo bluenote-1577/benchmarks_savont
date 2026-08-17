@@ -1,0 +1,325 @@
+marker	method	reads	expected_genus	recovered	matched_species	matched_genera	summed_abundance
+18s	banana	100	Prymnesium	True	Prymnesium parvum		0.736842
+18s	banana	100	Euglena	False			0.000000
+18s	banana	100	Chlorella	False			0.000000
+18s	banana	100	Paramecium	True	Paramecium bursaria	Conthreep	0.263158
+18s	banana	100	Gymnodinium	False			0.000000
+18s	banana	100	Cryptomonas	False			0.000000
+18s	banana	500	Prymnesium	True	Prymnesium parvum		0.510638
+18s	banana	500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.265957
+18s	banana	500	Chlorella	False			0.000000
+18s	banana	500	Paramecium	True	Paramecium bursaria	Conthreep	0.223404
+18s	banana	500	Gymnodinium	False			0.000000
+18s	banana	500	Cryptomonas	False			0.000000
+18s	banana	2500	Prymnesium	True	Prymnesium parvum		0.601905
+18s	banana	2500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.192381
+18s	banana	2500	Chlorella	False			0.000000
+18s	banana	2500	Paramecium	True	Paramecium bursaria	Conthreep	0.156190
+18s	banana	2500	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.049524
+18s	banana	2500	Cryptomonas	False			0.000000
+18s	banana	12500	Prymnesium	True	Prymnesium parvum		0.647168
+18s	banana	12500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.193741
+18s	banana	12500	Chlorella	False			0.000000
+18s	banana	12500	Paramecium	True	UNCLASSIFIED	Conthreep	0.136364
+18s	banana	12500	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.019374
+18s	banana	12500	Cryptomonas	False			0.000000
+18s	banana	60000	Prymnesium	True	Prymnesium parvum		0.649900
+18s	banana	60000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.199701
+18s	banana	60000	Chlorella	True	Chlorella variabilis	Chlorellales	0.000285
+18s	banana	60000	Paramecium	True	UNCLASSIFIED	Conthreep	0.118481
+18s	banana	60000	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.019236
+18s	banana	60000	Cryptomonas	False			0.000000
+18s	banana	300000	Prymnesium	True	Prymnesium parvum		0.643182
+18s	banana	300000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.199556
+18s	banana	300000	Chlorella	True	Chlorella sorokiniana	Chlorellales	0.001321
+18s	banana	300000	Paramecium	True	UNCLASSIFIED	Conthreep	0.115853
+18s	banana	300000	Gymnodinium	False			0.000000
+18s	banana	300000	Cryptomonas	True	Cryptomonas paramecium	UNKNOWN	0.000225
+18s	savont	100	Prymnesium	True	Prymnesium parvum		1.000000
+18s	savont	100	Euglena	False			0.000000
+18s	savont	100	Chlorella	False			0.000000
+18s	savont	100	Paramecium	False			0.000000
+18s	savont	100	Gymnodinium	False			0.000000
+18s	savont	100	Cryptomonas	False			0.000000
+18s	savont	500	Prymnesium	True	Prymnesium parvum		0.742857
+18s	savont	500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.089796
+18s	savont	500	Chlorella	False			0.000000
+18s	savont	500	Paramecium	True	Paramecium bursaria	Conthreep	0.167347
+18s	savont	500	Gymnodinium	False			0.000000
+18s	savont	500	Cryptomonas	False			0.000000
+18s	savont	2500	Prymnesium	True	Prymnesium parvum		0.728965
+18s	savont	2500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.082651
+18s	savont	2500	Chlorella	False			0.000000
+18s	savont	2500	Paramecium	True	Paramecium bursaria	Conthreep	0.143708
+18s	savont	2500	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.044676
+18s	savont	2500	Cryptomonas	False			0.000000
+18s	savont	12500	Prymnesium	True	Prymnesium parvum		0.726669
+18s	savont	12500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.087123
+18s	savont	12500	Chlorella	False			0.000000
+18s	savont	12500	Paramecium	True	Paramecium bursaria	Conthreep	0.141908
+18s	savont	12500	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.044300
+18s	savont	12500	Cryptomonas	False			0.000000
+18s	savont	60000	Prymnesium	True	Prymnesium parvum		0.717599
+18s	savont	60000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.086997
+18s	savont	60000	Chlorella	True	Chlorella variabilis	Chlorellales	0.002989
+18s	savont	60000	Paramecium	True	Paramecium bursaria	Conthreep	0.135524
+18s	savont	60000	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.038652
+18s	savont	60000	Cryptomonas	False			0.000000
+18s	savont	300000	Prymnesium	True	Prymnesium parvum		0.701113
+18s	savont	300000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.042219
+18s	savont	300000	Chlorella	True	Chlorella variabilis	Chlorellales	0.002725
+18s	savont	300000	Paramecium	True	Paramecium bursaria	Conthreep	0.131243
+18s	savont	300000	Gymnodinium	True	Gymnodinium fuscum	Gymnodiniphycidae	0.030164
+18s	savont	300000	Cryptomonas	True	Cryptomonas paramecium	UNKNOWN	0.000930
+18s	unoise	100	Prymnesium	False			0.000000
+18s	unoise	100	Euglena	False			0.000000
+18s	unoise	100	Chlorella	False			0.000000
+18s	unoise	100	Paramecium	False			0.000000
+18s	unoise	100	Gymnodinium	False			0.000000
+18s	unoise	100	Cryptomonas	False			0.000000
+18s	unoise	500	Prymnesium	False			0.000000
+18s	unoise	500	Euglena	False			0.000000
+18s	unoise	500	Chlorella	False			0.000000
+18s	unoise	500	Paramecium	False			0.000000
+18s	unoise	500	Gymnodinium	False			0.000000
+18s	unoise	500	Cryptomonas	False			0.000000
+18s	unoise	2500	Prymnesium	False			0.000000
+18s	unoise	2500	Euglena	False			0.000000
+18s	unoise	2500	Chlorella	False			0.000000
+18s	unoise	2500	Paramecium	False			0.000000
+18s	unoise	2500	Gymnodinium	False			0.000000
+18s	unoise	2500	Cryptomonas	False			0.000000
+18s	unoise	12500	Prymnesium	False			0.000000
+18s	unoise	12500	Euglena	False			0.000000
+18s	unoise	12500	Chlorella	False			0.000000
+18s	unoise	12500	Paramecium	False			0.000000
+18s	unoise	12500	Gymnodinium	False			0.000000
+18s	unoise	12500	Cryptomonas	False			0.000000
+18s	unoise	60000	Prymnesium	False			0.000000
+18s	unoise	60000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.735966
+18s	unoise	60000	Chlorella	False			0.000000
+18s	unoise	60000	Paramecium	False			0.000000
+18s	unoise	60000	Gymnodinium	False			0.000000
+18s	unoise	60000	Cryptomonas	True	Cryptomonas pyrenoidifera	UNKNOWN	0.022743
+18s	unoise	300000	Prymnesium	True	Prymnesium parvum		0.665970
+18s	unoise	300000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.242034
+18s	unoise	300000	Chlorella	False			0.000000
+18s	unoise	300000	Paramecium	False			0.000000
+18s	unoise	300000	Gymnodinium	False			0.000000
+18s	unoise	300000	Cryptomonas	True	Cryptomonas pyrenoidifera	UNKNOWN	0.007824
+18s	unoise_min3	100	Prymnesium	False			0.000000
+18s	unoise_min3	100	Euglena	False			0.000000
+18s	unoise_min3	100	Chlorella	False			0.000000
+18s	unoise_min3	100	Paramecium	False			0.000000
+18s	unoise_min3	100	Gymnodinium	False			0.000000
+18s	unoise_min3	100	Cryptomonas	False			0.000000
+18s	unoise_min3	500	Prymnesium	False			0.000000
+18s	unoise_min3	500	Euglena	False			0.000000
+18s	unoise_min3	500	Chlorella	False			0.000000
+18s	unoise_min3	500	Paramecium	False			0.000000
+18s	unoise_min3	500	Gymnodinium	False			0.000000
+18s	unoise_min3	500	Cryptomonas	False			0.000000
+18s	unoise_min3	2500	Prymnesium	False			0.000000
+18s	unoise_min3	2500	Euglena	False			0.000000
+18s	unoise_min3	2500	Chlorella	False			0.000000
+18s	unoise_min3	2500	Paramecium	False			0.000000
+18s	unoise_min3	2500	Gymnodinium	False			0.000000
+18s	unoise_min3	2500	Cryptomonas	False			0.000000
+18s	unoise_min3	12500	Prymnesium	False			0.000000
+18s	unoise_min3	12500	Euglena	True	Euglena UTEX364	Euglenophyceae	0.748448
+18s	unoise_min3	12500	Chlorella	False			0.000000
+18s	unoise_min3	12500	Paramecium	False			0.000000
+18s	unoise_min3	12500	Gymnodinium	False			0.000000
+18s	unoise_min3	12500	Cryptomonas	True	Cryptomonas pyrenoidifera	UNKNOWN	0.022342
+18s	unoise_min3	60000	Prymnesium	True	Prymnesium parvum		0.664845
+18s	unoise_min3	60000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.242662
+18s	unoise_min3	60000	Chlorella	False			0.000000
+18s	unoise_min3	60000	Paramecium	False			0.000000
+18s	unoise_min3	60000	Gymnodinium	False			0.000000
+18s	unoise_min3	60000	Cryptomonas	True	Cryptomonas pyrenoidifera	UNKNOWN	0.007499
+18s	unoise_min3	300000	Prymnesium	True	Prymnesium parvum		0.609179
+18s	unoise_min3	300000	Euglena	True	Euglena UTEX364	Euglenophyceae	0.201067
+18s	unoise_min3	300000	Chlorella	False			0.000000
+18s	unoise_min3	300000	Paramecium	True	Paramecium bursaria	Conthreep	0.112487
+18s	unoise_min3	300000	Gymnodinium	False			0.000000
+18s	unoise_min3	300000	Cryptomonas	True	Cryptomonas pyrenoidifera	UNKNOWN	0.006439
+its	savont	100	Aspergillus	False			0.000000
+its	savont	100	Cryptococcus	False			0.000000
+its	savont	100	Trichophyton	False			0.000000
+its	savont	100	Penicillium	False			0.000000
+its	savont	100	Fusarium	False			0.000000
+its	savont	100	Candida	False			0.000000
+its	savont	100	Nakaseomyces	False			0.000000
+its	savont	100	Malassezia	False			0.000000
+its	savont	100	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	1.000000
+its	savont	100	Cutaneotrichosporon	False			0.000000
+its	savont	500	Aspergillus	False			0.000000
+its	savont	500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.129252
+its	savont	500	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.054422
+its	savont	500	Penicillium	False			0.000000
+its	savont	500	Fusarium	False			0.000000
+its	savont	500	Candida	True	Candida albicans	Candida	0.115646
+its	savont	500	Nakaseomyces	True	Nakaseomyces glabratus	Nakaseomyces	0.112245
+its	savont	500	Malassezia	False			0.000000
+its	savont	500	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.323129
+its	savont	500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.265306
+its	savont	2500	Aspergillus	True	Aspergillus fumigatus	Aspergillus	0.014332
+its	savont	2500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.129642
+its	savont	2500	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.030619
+its	savont	2500	Penicillium	False			0.000000
+its	savont	2500	Fusarium	True	UNCLASSIFIED	Fusarium	0.016938
+its	savont	2500	Candida	True	Candida albicans	Candida	0.151792
+its	savont	2500	Nakaseomyces	True	Nakaseomyces glabratus	Nakaseomyces	0.114007
+its	savont	2500	Malassezia	True	Malassezia globosa	Malassezia	0.039088
+its	savont	2500	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.249511
+its	savont	2500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.254072
+its	savont	12500	Aspergillus	True	Aspergillus fumigatus	Aspergillus	0.011861
+its	savont	12500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.146920
+its	savont	12500	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.033924
+its	savont	12500	Penicillium	True	Penicillium rubens	Penicillium	0.015559
+its	savont	12500	Fusarium	True	UNCLASSIFIED	Fusarium	0.014666
+its	savont	12500	Candida	True	Candida albicans	Candida	0.144242
+its	savont	12500	Nakaseomyces	True	Nakaseomyces glabratus	Nakaseomyces	0.121158
+its	savont	12500	Malassezia	True	Malassezia globosa	Malassezia	0.038515
+its	savont	12500	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.240658
+its	savont	12500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.232496
+its	savont	60000	Aspergillus	True	Aspergillus fumigatus	Aspergillus	0.011637
+its	savont	60000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.155134
+its	savont	60000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.035091
+its	savont	60000	Penicillium	True	Penicillium rubens	Penicillium	0.016770
+its	savont	60000	Fusarium	True	UNCLASSIFIED	Fusarium	0.016770
+its	savont	60000	Candida	True	Candida albicans	Candida	0.161072
+its	savont	60000	Nakaseomyces	True	UNCLASSIFIED	Nakaseomyces	0.023066
+its	savont	60000	Malassezia	True	Malassezia globosa	Malassezia	0.043983
+its	savont	60000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.274222
+its	savont	60000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.262256
+its	savont	300000	Aspergillus	True	Aspergillus fumigatus	Aspergillus	0.011547
+its	savont	300000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.156964
+its	savont	300000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.035629
+its	savont	300000	Penicillium	True	Penicillium rubens	Penicillium	0.017040
+its	savont	300000	Fusarium	True	UNCLASSIFIED	Fusarium	0.017558
+its	savont	300000	Candida	True	Candida albicans	Candida	0.163525
+its	savont	300000	Nakaseomyces	False			0.000000
+its	savont	300000	Malassezia	True	Malassezia globosa	Malassezia	0.044595
+its	savont	300000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.284951
+its	savont	300000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.268192
+its	unoise	100	Aspergillus	False			0.000000
+its	unoise	100	Cryptococcus	False			0.000000
+its	unoise	100	Trichophyton	False			0.000000
+its	unoise	100	Penicillium	False			0.000000
+its	unoise	100	Fusarium	False			0.000000
+its	unoise	100	Candida	False			0.000000
+its	unoise	100	Nakaseomyces	False			0.000000
+its	unoise	100	Malassezia	False			0.000000
+its	unoise	100	Saccharomyces	False			0.000000
+its	unoise	100	Cutaneotrichosporon	False			0.000000
+its	unoise	500	Aspergillus	False			0.000000
+its	unoise	500	Cryptococcus	False			0.000000
+its	unoise	500	Trichophyton	False			0.000000
+its	unoise	500	Penicillium	False			0.000000
+its	unoise	500	Fusarium	False			0.000000
+its	unoise	500	Candida	False			0.000000
+its	unoise	500	Nakaseomyces	False			0.000000
+its	unoise	500	Malassezia	False			0.000000
+its	unoise	500	Saccharomyces	False			0.000000
+its	unoise	500	Cutaneotrichosporon	False			0.000000
+its	unoise	2500	Aspergillus	False			0.000000
+its	unoise	2500	Cryptococcus	False			0.000000
+its	unoise	2500	Trichophyton	False			0.000000
+its	unoise	2500	Penicillium	False			0.000000
+its	unoise	2500	Fusarium	False			0.000000
+its	unoise	2500	Candida	False			0.000000
+its	unoise	2500	Nakaseomyces	False			0.000000
+its	unoise	2500	Malassezia	False			0.000000
+its	unoise	2500	Saccharomyces	False			0.000000
+its	unoise	2500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	1.000000
+its	unoise	12500	Aspergillus	False			0.000000
+its	unoise	12500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.189417
+its	unoise	12500	Trichophyton	False			0.000000
+its	unoise	12500	Penicillium	False			0.000000
+its	unoise	12500	Fusarium	False			0.000000
+its	unoise	12500	Candida	True	Candida albicans	Candida	0.198973
+its	unoise	12500	Nakaseomyces	False			0.000000
+its	unoise	12500	Malassezia	False			0.000000
+its	unoise	12500	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.298531
+its	unoise	12500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.313079
+its	unoise	60000	Aspergillus	False			0.000000
+its	unoise	60000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.175433
+its	unoise	60000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.042667
+its	unoise	60000	Penicillium	False			0.000000
+its	unoise	60000	Fusarium	False			0.000000
+its	unoise	60000	Candida	True	Candida albicans	Candida	0.189078
+its	unoise	60000	Nakaseomyces	False			0.000000
+its	unoise	60000	Malassezia	False			0.000000
+its	unoise	60000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.292794
+its	unoise	60000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.300028
+its	unoise	300000	Aspergillus	False			0.000000
+its	unoise	300000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.150029
+its	unoise	300000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.036161
+its	unoise	300000	Penicillium	False			0.000000
+its	unoise	300000	Fusarium	True	UNCLASSIFIED	Fusarium	0.018976
+its	unoise	300000	Candida	True	Candida albicans|UNCLASSIFIED	Candida	0.161432
+its	unoise	300000	Nakaseomyces	True	Nakaseomyces glabratus	Nakaseomyces	0.121373
+its	unoise	300000	Malassezia	False			0.000000
+its	unoise	300000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.254607
+its	unoise	300000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.257423
+its	unoise_min3	100	Aspergillus	False			0.000000
+its	unoise_min3	100	Cryptococcus	False			0.000000
+its	unoise_min3	100	Trichophyton	False			0.000000
+its	unoise_min3	100	Penicillium	False			0.000000
+its	unoise_min3	100	Fusarium	False			0.000000
+its	unoise_min3	100	Candida	False			0.000000
+its	unoise_min3	100	Nakaseomyces	False			0.000000
+its	unoise_min3	100	Malassezia	False			0.000000
+its	unoise_min3	100	Saccharomyces	False			0.000000
+its	unoise_min3	100	Cutaneotrichosporon	False			0.000000
+its	unoise_min3	500	Aspergillus	False			0.000000
+its	unoise_min3	500	Cryptococcus	False			0.000000
+its	unoise_min3	500	Trichophyton	False			0.000000
+its	unoise_min3	500	Penicillium	False			0.000000
+its	unoise_min3	500	Fusarium	False			0.000000
+its	unoise_min3	500	Candida	False			0.000000
+its	unoise_min3	500	Nakaseomyces	False			0.000000
+its	unoise_min3	500	Malassezia	False			0.000000
+its	unoise_min3	500	Saccharomyces	False			0.000000
+its	unoise_min3	500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	1.000000
+its	unoise_min3	2500	Aspergillus	False			0.000000
+its	unoise_min3	2500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.244692
+its	unoise_min3	2500	Trichophyton	False			0.000000
+its	unoise_min3	2500	Penicillium	False			0.000000
+its	unoise_min3	2500	Fusarium	False			0.000000
+its	unoise_min3	2500	Candida	True	Candida albicans	Candida	0.289181
+its	unoise_min3	2500	Nakaseomyces	False			0.000000
+its	unoise_min3	2500	Malassezia	False			0.000000
+its	unoise_min3	2500	Saccharomyces	False			0.000000
+its	unoise_min3	2500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.466127
+its	unoise_min3	12500	Aspergillus	False			0.000000
+its	unoise_min3	12500	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.181470
+its	unoise_min3	12500	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.041951
+its	unoise_min3	12500	Penicillium	False			0.000000
+its	unoise_min3	12500	Fusarium	False			0.000000
+its	unoise_min3	12500	Candida	True	Candida albicans	Candida	0.190626
+its	unoise_min3	12500	Nakaseomyces	False			0.000000
+its	unoise_min3	12500	Malassezia	False			0.000000
+its	unoise_min3	12500	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.286007
+its	unoise_min3	12500	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.299945
+its	unoise_min3	60000	Aspergillus	False			0.000000
+its	unoise_min3	60000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.171311
+its	unoise_min3	60000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.041664
+its	unoise_min3	60000	Penicillium	False			0.000000
+its	unoise_min3	60000	Fusarium	True	UNCLASSIFIED	Fusarium	0.021359
+its	unoise_min3	60000	Candida	True	Candida albicans	Candida	0.185495
+its	unoise_min3	60000	Nakaseomyces	False			0.000000
+its	unoise_min3	60000	Malassezia	False			0.000000
+its	unoise_min3	60000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.285916
+its	unoise_min3	60000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.294255
+its	unoise_min3	300000	Aspergillus	True	Aspergillus fumigatus	Aspergillus	0.010523
+its	unoise_min3	300000	Cryptococcus	True	Cryptococcus neoformans	Cryptococcus	0.148049
+its	unoise_min3	300000	Trichophyton	True	UNCLASSIFIED	Trichophyton	0.035003
+its	unoise_min3	300000	Penicillium	True	Penicillium rubens	Penicillium	0.016073
+its	unoise_min3	300000	Fusarium	True	UNCLASSIFIED	Fusarium	0.018784
+its	unoise_min3	300000	Candida	True	Candida albicans|UNCLASSIFIED	Candida	0.157184
+its	unoise_min3	300000	Nakaseomyces	True	Nakaseomyces glabratus	Nakaseomyces	0.117472
+its	unoise_min3	300000	Malassezia	False			0.000000
+its	unoise_min3	300000	Saccharomyces	True	Saccharomyces cerevisiae	Saccharomyces	0.246917
+its	unoise_min3	300000	Cutaneotrichosporon	True	UNCLASSIFIED	Cutaneotrichosporon	0.249996

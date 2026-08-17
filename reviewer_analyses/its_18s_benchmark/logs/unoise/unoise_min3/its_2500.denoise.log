@@ -1,0 +1,13 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+unoise3 its_2500.fa
+00:00 1.2Mb .. ...  (working)00:00 2.4Mb ... .. Loading seqs.00:00 2.4Mb ...... Loading seqs.
+00:00 3.5Mb   0.0% Denoising 0 good seqs. (minsize 3)00:00 5.2Mb 100.0% Denoising 3 good seqs. (minsize 3)
+00:00 5.3Mb   0.0% Chimeras 0 hits (0.0%)00:00 5.3Mb 100.0% Chimeras 0 hits (0.0%)
+00:00 5.3Mb ...... 3 final seqs.
+00:00 5.3Mb   0.0% Writing output00:00 5.3Mb 100.0% Writing output
+00:00 5.3Mb   0.0% Writing zotus00:00 5.3Mb 100.0% Writing zotus
+00:00 5.3Mb ...... Finished
+

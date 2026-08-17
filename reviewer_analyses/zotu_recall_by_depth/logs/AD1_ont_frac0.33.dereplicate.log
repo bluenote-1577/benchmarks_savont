@@ -1,0 +1,13 @@
+usearch v12.0 [b1d935b], 791Gb RAM, 80 cores
+(C) Copyright 2013-24 Robert C. Edgar.
+https://drive5.com/usearch
+
+fastx_uniques AD1_ont_frac0.33.fastq
+00:00 1.9Mb .. ...  (working)00:00 1.9Mb ... .. Loading seqs.00:00 170Mb .... . Loading seqs.00:01 311Mb . .... Loading seqs.00:01 454Mb .. ... Loading seqs.00:02 599Mb ... .. Loading seqs.00:02 742Mb .... . Loading seqs.00:03 887Mb . .... Loading seqs.00:03 1.0Gb .. ... Loading seqs.00:04 1.2Gb ... .. Loading seqs.00:04 1.3Gb ...... Loading seqs.
+00:04 1.2Gb ...... CPU has 80 cores, defaulting to 10 threads
+00:04 1.2Gb .... .  (working)00:05 1.2Gb . ....  (working)00:05 1.2Gb .. ...  (working)00:06 1.3Gb ... .. Unique seqs.00:06 1.3Gb ...... Unique seqs.
+00:06 1.3Gb ...... 443931 seqs, 441693 uniques, 441042 singletons (99.9%)
+00:06 1.3Gb ...... Min size 1, median 1, max 306, avg 1.01
+00:06 1.3Gb .... . Writing 441.7k uniques00:06 1.3Gb . .... Writing 441.7k uniques00:06 1.3Gb .. ... Writing 441.7k uniques00:07 1.3Gb ... .. Writing 441.7k uniques00:07 1.3Gb .... . Writing 441.7k uniques00:08 1.3Gb . .... Writing 441.7k uniques00:08 1.3Gb .. ... Writing 441.7k uniques00:09 1.3Gb ... .. Writing 441.7k uniques00:09 1.3Gb .... . Writing 441.7k uniques00:10 1.3Gb . .... Writing 441.7k uniques00:10 1.3Gb .. ... Writing 441.7k uniques00:11 1.3Gb ... .. Writing 441.7k uniques00:11 1.3Gb .... . Writing 441.7k uniques00:12 1.3Gb . .... Writing 441.7k uniques00:12 1.3Gb .. ... Writing 441.7k uniques00:13 1.3Gb ... .. Writing 441.7k uniques00:13 1.3Gb .... . Writing 441.7k uniques00:14 1.3Gb . .... Writing 441.7k uniques00:14 1.3Gb .. ... Writing 441.7k uniques00:15 1.3Gb ... .. Writing 441.7k uniques00:15 1.3Gb .... . Writing 441.7k uniques00:16 1.3Gb . .... Writing 441.7k uniques00:16 1.3Gb .. ... Writing 441.7k uniques00:17 1.3Gb ... .. Writing 441.7k uniques00:17 1.3Gb .... . Writing 441.7k uniques00:18 1.3Gb . .... Writing 441.7k uniques00:18 1.3Gb .. ... Writing 441.7k uniques00:19 1.3Gb ...... Writing 441.7k uniques
+00:19 1.3Gb ...... Finished
+
