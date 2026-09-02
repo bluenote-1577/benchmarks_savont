@@ -88,15 +88,15 @@ Results are written to `results/` with timing benchmarks in `results/benchmarks/
 - `real_notebook/real_analysis.ipynb` requires running `snakemake -s snakefile_real.snk` first
 - For the EMU notebook, first run `emu abundance` with `--keep-files --keep-counts`, then run `emu_analysis.py`
 
-## Reviewer analyses
+## Supplementary and revision analyses
 
 Compact final tables and plotting code for the revision experiments are in
 `reviewer_analyses/`. They cover abundance-stratified HiFi agreement, minimum
 cluster size, primary clustering identity, simulated read accuracy, HiFi zOTU
-recall by observed ONT depth, and ITS/18S expected-genus recovery. Large raw and
-temporary outputs are intentionally omitted.
+recall by observed ONT depth, and (supplementary) ITS/18S expected-genus
+recovery. Large raw and temporary outputs are intentionally omitted.
 
-To regenerate all six reviewer figures from the included tables:
+To regenerate all supplementary and revision figures from the included tables:
 
 ```bash
 conda env create -f reviewer_analyses/plotting_environment.yaml

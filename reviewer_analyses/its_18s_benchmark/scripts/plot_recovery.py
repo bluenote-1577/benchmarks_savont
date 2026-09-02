@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Plot expected-genus recovery in the style of the manuscript's Figure 2."""
+"""Plot expected-genus recovery (supplementary figure), styled to match the
+manuscript's Figure 2.
+"""
 
 from __future__ import annotations
 
@@ -12,15 +14,16 @@ import pandas as pd
 import seaborn as sns
 
 
-METHODS = ["savont", "unoise", "unoise_min3", "banana"]
+# BaNaNA results remain in the source tables for supplementary reporting but
+# are not included in this figure.
+METHODS = ["savont", "unoise", "unoise_min3"]
 LABELS = {
     "savont": "Savont",
     "unoise": "UNOISE3",
     "unoise_min3": "UNOISE3 (min. 3 reads)",
-    "banana": "BaNaNA\n(OTU only)",
 }
-MARKERS = {"savont": "o", "unoise": "s", "unoise_min3": "^", "banana": "X"}
-LINESTYLES = {"savont": "-", "unoise": "--", "unoise_min3": "-.", "banana": ":"}
+MARKERS = {"savont": "o", "unoise": "s", "unoise_min3": "^"}
+LINESTYLES = {"savont": "-", "unoise": "--", "unoise_min3": "-."}
 
 
 def set_style() -> dict[str, tuple[float, float, float]]:
@@ -39,13 +42,12 @@ def set_style() -> dict[str, tuple[float, float, float]]:
             "ps.fonttype": 42,
         }
     )
-    # palette[3] is the red used for DADA2 in Figure 2. Keep BaNaNA visually
-    # distinct by using the next muted color (purple).
+    # palette[3] is the red used for DADA2 in Figure 2; skipped here since
+    # DADA2 is not run on ONT ITS/18S data.
     return {
         "savont": palette[0],
         "unoise": palette[1],
         "unoise_min3": palette[2],
-        "banana": palette[4],
     }
 
 
@@ -98,7 +100,7 @@ def main() -> None:
         labels,
         loc="upper center",
         bbox_to_anchor=(0.5, 1.08),
-        ncol=5,
+        ncol=4,
         frameon=False,
         fontsize=7,
     )

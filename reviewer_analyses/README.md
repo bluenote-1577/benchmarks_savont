@@ -1,4 +1,4 @@
-# Reviewer analyses
+# Supplementary and revision analyses
 
 This directory contains result tables, plotting code, methods, and run records
 for the manuscript revision.

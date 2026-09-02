@@ -242,20 +242,20 @@ def save_figure_copy(source_prefix: Path, destination_prefix: Path) -> None:
 def plot_expected_genera() -> None:
     folder = HERE / "its_18s_benchmark"
     data = pd.read_csv(folder / "expected_genera_recovery.tsv", sep="\t")
-    methods = ["savont", "unoise", "unoise_min3", "banana"]
+    # BaNaNA results remain in the source tables for supplementary reporting
+    # but are not included in this figure.
+    methods = ["savont", "unoise", "unoise_min3"]
     labels = {
         "savont": "Savont",
         "unoise": "UNOISE3",
         "unoise_min3": "UNOISE3 (min. 3 reads)",
-        "banana": "BaNaNA\n(OTU only)",
     }
-    markers = {"savont": "o", "unoise": "s", "unoise_min3": "^", "banana": "X"}
-    linestyles = {"savont": "-", "unoise": "--", "unoise_min3": "-.", "banana": ":"}
+    markers = {"savont": "o", "unoise": "s", "unoise_min3": "^"}
+    linestyles = {"savont": "-", "unoise": "--", "unoise_min3": "-."}
     colors = {
         "savont": "#4878d0",
         "unoise": "#ee854a",
         "unoise_min3": "#6acc64",
-        "banana": "#956cb4",
     }
     mpl.rcdefaults()
     mpl.rcParams.update(
@@ -314,7 +314,7 @@ def plot_expected_genera() -> None:
         legend_labels,
         loc="upper center",
         bbox_to_anchor=(0.5, 1.08),
-        ncol=5,
+        ncol=4,
         frameon=False,
         fontsize=7,
     )
@@ -327,12 +327,24 @@ def main() -> None:
     parser.add_argument(
         "--only",
         nargs="+",
-        choices=["abundance", "min-cluster", "primary-threshold", "accuracy", "zotu", "its-18s"],
+        choices=[
+            "abundance",
+            "min-cluster",
+            "primary-threshold",
+            "accuracy",
+            "zotu",
+            "its-18s",
+        ],
         help="Regenerate only the named figure groups (default: all).",
     )
     args = parser.parse_args()
     selected = set(args.only or [
-        "abundance", "min-cluster", "primary-threshold", "accuracy", "zotu", "its-18s"
+        "abundance",
+        "min-cluster",
+        "primary-threshold",
+        "accuracy",
+        "zotu",
+        "its-18s",
     ])
     if "abundance" in selected:
         plot_abundance_fidelity()

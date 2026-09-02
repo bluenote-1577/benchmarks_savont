@@ -73,7 +73,7 @@ The exact file has 855,782 FASTQ records, including three zero-length records.
 The upstream primer-trimming inputs and primer sequences were not available in
 this repository, so the workflow begins from this trimmed FASTQ.
 
-## 4. Prepare SILVA, UNITE, BaNaNA, and PR2
+## 4. Prepare SILVA and UNITE
 
 Download SILVA 138.2 in Savont format:
 
@@ -86,7 +86,11 @@ savont download \
 The Snakemake rule `prepare_unites` converts its
 long pipe-delimited headers into Savont's FASTA plus taxonomy-table format.
 
-For BaNaNA, clone the exact source commit and create the pinned environment:
+## 5. Additional BaNaNA setup
+
+BaNaNA is not shown in the expected-genus recovery figure. Its 18S results are
+retained as an additional analysis. To reproduce them, clone the exact source
+commit and create the pinned environment:
 
 ```bash
 git clone https://github.com/ibe-uw/BaNaNA.git \
@@ -110,7 +114,7 @@ PR2 is used only for BaNaNA's reference-chimera filtering. All final 18S
 taxonomic scoring uses SILVA so methods are compared through one classifier.
 
 
-## 5. Run the workflow
+## 6. Run the workflow
 
 Check the DAG first:
 
@@ -120,7 +124,7 @@ snakemake \
   --cores 1 --dry-run
 ```
 
-Run all depths and methods:
+Run all depths and methods, including the additional BaNaNA analysis:
 
 ```bash
 XDG_CACHE_HOME=/tmp/snakemake-cache \
@@ -131,14 +135,25 @@ snakemake \
 ```
 
 
-## 6. Audit the manuscript run
+To regenerate the Savont/UNOISE figure from the included table without running
+BaNaNA:
+
+```bash
+MPLCONFIGDIR=/tmp/matplotlib-its-18s \
+python reviewer_analyses/its_18s_benchmark/scripts/plot_recovery.py \
+  --input reviewer_analyses/its_18s_benchmark/expected_genera_recovery.tsv \
+  --output-prefix reviewer_analyses/its_18s_benchmark/figures/expected_genera_recovered
+```
+
+## 7. Audit the analysis runs
 
 - `logs/savont/`: all 12 Savont ASV logs.
 - `logs/unoise/`: dereplication, denoising, and abundance-mapping logs.
   A zero-byte OTU-table log is expected when its paired denoising log records
   zero zOTUs; in that case no USEARCH mapping command was invoked.
-- `logs/banana/*.log.gz`: complete BaNaNA command/stage logs, compressed
-  losslessly because the 300,000-read log is verbose. Inspect with `zless`.
+- `logs/banana/*.log.gz`: complete logs for the additional BaNaNA analysis,
+  compressed losslessly because the 300,000-read log is verbose. Inspect with
+  `zless`.
 - `logs/classification/`: harmonized Savont classification logs for every
   marker/method/depth combination.
 - `logs/database/`: minimap2 index construction logs.
@@ -147,7 +162,3 @@ snakemake \
   counts at each BaNaNA depth.
 - `expected_genera_recovery_details.tsv`: the exact species/genus strings that
   caused each expected-genus recovery call.
-
-These files demonstrate execution and make the scoring decisions auditable
-without committing raw reads, reference databases, or multi-gigabyte temporary
-run trees.
